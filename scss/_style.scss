@@ -1,3 +1,8 @@
+body{
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+
 .audience ul li, .type ul li, .star ul li {
   background: #fff;
   color: #707070;
@@ -34,4 +39,12 @@
 .active{
   background: #0267a8 !important;
   color: #fff !important;
+}
+
+.welcome {
+  background: #cd531f;
+  color: #fff;
+  padding: 5px 10px 60px 10px;
+  line-height: 1.75em;
+  font-weight: lighter;
 }

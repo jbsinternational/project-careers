@@ -256,14 +256,14 @@ body:after {
 }
 
 main, header {
-  width: 65.27778%;
+  width: 73.61111%;
   float: right;
   margin-left: 0.69444%;
   margin-right: 0.69444%;
 }
 
 aside {
-  width: 31.94444%;
+  width: 23.61111%;
   float: left;
   margin-left: 0.69444%;
   margin-right: 0.69444%;
@@ -287,6 +287,11 @@ ul li {
 
 .star ul {
   margin-left: 33px;
+}
+
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
 }
 
 .audience ul li, .type ul li, .star ul li {
@@ -324,4 +329,12 @@ ul li {
 .active {
   background: #0267a8 !important;
   color: #fff !important;
+}
+
+.welcome {
+  background: #cd531f;
+  color: #fff;
+  padding: 5px 10px 60px 10px;
+  line-height: 1.75em;
+  font-weight: lighter;
 }
