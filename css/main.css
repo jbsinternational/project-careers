@@ -238,6 +238,12 @@ body {
   max-width: 75%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 50px;
+  background-image: url("/Users/pmiller/Documents/Code/JBS/project-careers/img/background.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 body:after {
   content: " ";
@@ -245,18 +251,22 @@ body:after {
   clear: both;
 }
 
+.resources {
+  padding: 10px 20px;
+}
+
 main, header {
-  width: 66.26984%;
+  width: 65.27778%;
   float: right;
-  margin-left: 0.19841%;
-  margin-right: 0.19841%;
+  margin-left: 0.69444%;
+  margin-right: 0.69444%;
 }
 
 aside {
-  width: 32.93651%;
+  width: 31.94444%;
   float: left;
-  margin-left: 0.19841%;
-  margin-right: 0.19841%;
+  margin-left: 0.69444%;
+  margin-right: 0.69444%;
 }
 
 ul li {
@@ -264,9 +274,53 @@ ul li {
   display: inline-block;
 }
 
-.sortables h3, .sortables2 h3, .sortables3 h3 {
+.audience h3, .type h3, .star h3 {
   display: inline-block;
 }
-.sortables ul, .sortables2 ul, .sortables3 ul {
+.audience ul, .type ul, .star ul {
   display: inline-block;
+}
+
+.type ul {
+  margin-left: 40px;
+}
+
+.star ul {
+  margin-left: 33px;
+}
+
+.audience ul li, .type ul li, .star ul li {
+  background: #fff;
+  color: #707070;
+  padding: 12px 10px;
+  margin-left: -5px;
+  border-right: 2px solid #dcdcdc;
+  cursor: pointer;
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+}
+.audience ul li:hover, .type ul li:hover, .star ul li:hover {
+  background: #0267a8;
+  color: #fff;
+}
+
+.audience ul li:first-child, .type ul li:first-child, .star ul li:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-left: 1px solid #dcdcdc;
+}
+
+.audience ul li:last-child, .type ul li:last-child, .star ul li:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-left: #dcdcdc;
+  border-right: 1px solid #dcdcdc;
+}
+
+.audience ul li:nth-child(2), .type ul li:nth-child(2), .type ul li:nth-child(3) {
+  border-right: 1px solid #dcdcdc;
+}
+
+.resources {
+  background: #fff;
 }

@@ -1,0 +1,36 @@
+.audience ul li, .type ul li, .star ul li {
+  background: #fff;
+  color: #707070;
+  padding: 12px 10px;
+  margin-left: -5px;
+  border-right: 2px solid #dcdcdc;
+  cursor: pointer;
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+  &:hover{
+    background: #0267a8;
+    color: #fff;
+  }
+}
+
+.audience ul li:first-child, .type ul li:first-child, .star ul li:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-left: 1px solid #dcdcdc;
+}
+
+.audience ul li:last-child, .type ul li:last-child, .star ul li:last-child{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-left: #dcdcdc;
+  border-right: 1px solid #dcdcdc;
+
+}
+
+.audience ul li:nth-child(2), .type ul li:nth-child(2), .type ul li:nth-child(3){
+  border-right: 1px solid #dcdcdc;
+}
+
+.resources {
+  background: #fff;
+}

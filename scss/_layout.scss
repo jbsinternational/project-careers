@@ -1,6 +1,6 @@
 $susy: (
   columns: 12,
-  gutters: 1/20,
+  gutters: 1/5,
   math: fluid,
   output: float,
   gutter-position: split,
@@ -8,6 +8,16 @@ $susy: (
 
 body {
   @include container(75%);
+  margin-top: 50px;
+  background-image: url("/Users/pmiller/Documents/Code/JBS/project-careers/img/background.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.resources {
+  padding: 10px 20px;
 }
 
 main, header {
@@ -23,7 +33,7 @@ ul li {
   display: inline-block;
 }
 
-.sortables, .sortables2, .sortables3 {
+.audience, .type, .star {
   h3{
     display: inline-block;
   }
@@ -33,4 +43,12 @@ ul li {
 }
 
 .logo {
+}
+
+.type ul {
+  margin-left: 40px;
+}
+
+.star ul {
+  margin-left: 33px;
 }
