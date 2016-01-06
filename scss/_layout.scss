@@ -19,7 +19,7 @@ body {
 .resources {
   padding: 10px 20px;
 }
-
+ 
 main, header {
   @include span(9 at 4);
 }
