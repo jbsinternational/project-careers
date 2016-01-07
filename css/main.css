@@ -233,9 +233,10 @@ textarea {
   }
 }
 body {
-  max-width: 80%;
+  max-width: 69%;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 20px;
   margin-top: 50px;
   background-image: url("/Users/pmiller/Documents/Code/JBS/project-careers/img/background.png");
   -webkit-background-size: cover;
@@ -254,17 +255,17 @@ body:after {
 }
 
 main, header {
-  width: 73.95833%;
+  width: 73.33333%;
   float: right;
-  margin-left: 0.52083%;
-  margin-right: 0.52083%;
+  margin-left: 0.83333%;
+  margin-right: 0.83333%;
 }
 
 aside {
-  width: 23.95833%;
+  width: 23.33333%;
   float: left;
-  margin-left: 0.52083%;
-  margin-right: 0.52083%;
+  margin-left: 0.83333%;
+  margin-right: 0.83333%;
 }
 
 ul li {
@@ -275,7 +276,7 @@ ul li {
 .audience,
 .type,
 .star {
-  height: 50px;
+  height: 55px;
 }
 .audience h3,
 .type h3,
@@ -320,7 +321,7 @@ body {
 .star ul li {
   background: #fff;
   color: #707070;
-  padding: 7px 15px;
+  padding: 10px 20px;
   margin-left: -5px;
   border-left: 1px solid #dcdcdc;
   cursor: pointer;
@@ -354,6 +355,7 @@ body {
 .resources p {
   margin: 0 0 10px;
   font-size: .9em;
+  font-weight: 500;
 }
 
 .active {
@@ -364,11 +366,12 @@ body {
 .welcome {
   background: #db581f;
   color: #fff;
-  padding: 5px 10px 60px;
+  padding: 5px 35px 60px 30px;
   line-height: 1.75em;
   font-weight: lighter;
 }
 .welcome h1 {
   font-size: 1.5em;
   font-weight: lighter;
+  letter-spacing: .5px;
 }

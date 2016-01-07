@@ -1,13 +1,14 @@
 $susy: (
-  columns: 16,
-  gutters: 1/5,
+  columns: 10,
+  gutters: 2/10,
   math: fluid,
   output: float,
   gutter-position: split,
 );
 
 body {
-  @include container(80%);
+  @include container(69%);
+  padding-left: 20px;
   margin-top: 50px;
   background-image: url("/Users/pmiller/Documents/Code/JBS/project-careers/img/background.png");
   -webkit-background-size: cover;
@@ -21,11 +22,11 @@ body {
 }
 
 main, header {
-  @include span(12 at 5);
+  @include span(7.5 at 3.5);
 }
 
 aside {
-  @include span(4 at 1);
+  @include span(2.5 at 1);
 }
 
 ul li {
@@ -36,7 +37,7 @@ ul li {
 .audience,
 .type,
 .star {
-  height: 50px;
+  height: 55px;
   h3{
     display: inline-block;
   }
