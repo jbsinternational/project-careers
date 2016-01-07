@@ -233,7 +233,7 @@ textarea {
   }
 }
 body {
-  max-width: 70%;
+  max-width: 80%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
@@ -254,17 +254,17 @@ body:after {
 }
 
 main, header {
-  width: 73.61111%;
+  width: 73.95833%;
   float: right;
-  margin-left: 0.69444%;
-  margin-right: 0.69444%;
+  margin-left: 0.52083%;
+  margin-right: 0.52083%;
 }
 
 aside {
-  width: 23.61111%;
+  width: 23.95833%;
   float: left;
-  margin-left: 0.69444%;
-  margin-right: 0.69444%;
+  margin-left: 0.52083%;
+  margin-right: 0.52083%;
 }
 
 ul li {
@@ -272,13 +272,19 @@ ul li {
   display: inline-block;
 }
 
-.audience, .type, .star {
+.audience,
+.type,
+.star {
   height: 60px;
 }
-.audience h3, .type h3, .star h3 {
+.audience h3,
+.type h3,
+.star h3 {
   display: inline-block;
 }
-.audience ul, .type ul, .star ul {
+.audience ul,
+.type ul,
+.star ul {
   display: inline-block;
   padding-left: 20px;
 }
@@ -293,10 +299,17 @@ ul li {
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: lighter;
 }
 
-.audience ul li, .type ul li, .star ul li {
+.audience h3,
+.type h3,
+.star h3 {
+  font-weight: lighter;
+}
+.audience ul li,
+.type ul li,
+.star ul li {
   background: #fff;
   color: #707070;
   padding: 8px 15px;
@@ -305,17 +318,19 @@ body {
   cursor: pointer;
   border-top: 1px solid #dcdcdc;
   border-bottom: 1px solid #dcdcdc;
-  font-size: .9em;
-  letter-spacing: .5px;
+  font-size: 0.9em;
+  letter-spacing: 0.5px;
 }
-
-.audience ul li:first-child, .type ul li:first-child, .star ul li:first-child {
+.audience ul li:first-child,
+.type ul li:first-child,
+.star ul li:first-child {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   border-left: 1px solid #dcdcdc;
 }
-
-.audience ul li:last-child, .type ul li:last-child, .star ul li:last-child {
+.audience ul li:last-child,
+.type ul li:last-child,
+.star ul li:last-child {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   border-right: 1px solid #dcdcdc;
@@ -326,10 +341,11 @@ body {
 }
 .resources h2 {
   margin: 0;
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 .resources p {
-  margin: 0 0 10px 0;
+  margin: 0 0 10px;
+  font-size: .9em;
 }
 
 .active {
@@ -338,9 +354,13 @@ body {
 }
 
 .welcome {
-  background: #ca501c;
+  background: #db581f;
   color: #fff;
-  padding: 5px 10px 60px 10px;
+  padding: 5px 10px 60px;
   line-height: 1.75em;
+  font-weight: lighter;
+}
+.welcome h1 {
+  font-size: 1.5em;
   font-weight: lighter;
 }

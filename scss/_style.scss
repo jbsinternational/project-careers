@@ -1,55 +1,66 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500);
 
-body{
-  font-family: 'Roboto', sans-serif;  
-  font-weight: 300;
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
 }
 
-.audience ul li, .type ul li, .star ul li {
-  background: #fff;
-  color: #707070;
-  padding: 8px 15px;
-  margin-left: -5px;
-  border-left: 1px solid #dcdcdc;
-  cursor: pointer;
-  border-top: 1px solid #dcdcdc;
-  border-bottom: 1px solid #dcdcdc;
-  font-size: .9em;
-  letter-spacing: .5px;
+.audience,
+.type,
+.star {
+  h3 {
+    font-weight: lighter;
+  }
+  ul li {
+    background: #fff;
+    color: #707070;
+    padding: 8px 15px;
+    margin-left: -5px;
+    border-left: 1px solid #dcdcdc;
+    cursor: pointer;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+    &:first-child{
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border-left: 1px solid #dcdcdc;
+    }
+    &:last-child{
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border-right: 1px solid #dcdcdc;
+    }
+  }
 }
 
-.audience ul li:first-child, .type ul li:first-child, .star ul li:first-child {
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-left: 1px solid #dcdcdc;
-}
-
-.audience ul li:last-child, .type ul li:last-child, .star ul li:last-child{
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-right: 1px solid #dcdcdc;
-}
 
 .resources {
   background: #fff;
-  h2{
-    margin:0;
-    font-size: 1.3em;
+  h2 {
+    margin: 0;
+    font-size: 1.1em;
   }
-  p{
-    margin: 0 0 10px 0;
+  p {
+    margin: 0 0 10px;
+    font-size: .9em;
   }
 }
 
-.active{
+.active {
   background: #0267a8 !important;
   color: #fff !important;
 }
 
 .welcome {
-  background: #ca501c;
+  background: #db581f;
   color: #fff;
-  padding: 5px 10px 60px 10px;
+  padding: 5px 10px 60px;
   line-height: 1.75em;
   font-weight: lighter;
+  h1{
+    font-size: 1.5em;
+    font-weight: lighter;
+  }
 }

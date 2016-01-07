@@ -1,5 +1,5 @@
 $susy: (
-  columns: 12,
+  columns: 16,
   gutters: 1/5,
   math: fluid,
   output: float,
@@ -7,7 +7,7 @@ $susy: (
 );
 
 body {
-  @include container(70%);
+  @include container(80%);
   margin-top: 50px;
   background-image: url("/Users/pmiller/Documents/Code/JBS/project-careers/img/background.png");
   -webkit-background-size: cover;
@@ -21,11 +21,11 @@ body {
 }
 
 main, header {
-  @include span(9 at 4);
+  @include span(12 at 5);
 }
 
 aside {
-  @include span(3 at 1);
+  @include span(4 at 1);
 }
 
 ul li {
@@ -33,7 +33,9 @@ ul li {
   display: inline-block;
 }
 
-.audience, .type, .star {
+.audience,
+.type,
+.star {
   height: 60px;
   h3{
     display: inline-block;
