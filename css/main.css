@@ -299,7 +299,7 @@ body {
   color: #707070;
   padding: 12px 10px;
   margin-left: -5px;
-  border-right: 2px solid #dcdcdc;
+  border-left: 1px solid #dcdcdc;
   cursor: pointer;
   border-top: 1px solid #dcdcdc;
   border-bottom: 1px solid #dcdcdc;
@@ -314,11 +314,6 @@ body {
 .audience ul li:last-child, .type ul li:last-child, .star ul li:last-child {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  border-left: #dcdcdc;
-  border-right: 1px solid #dcdcdc;
-}
-
-.audience ul li:nth-child(2), .type ul li:nth-child(2), .type ul li:nth-child(3) {
   border-right: 1px solid #dcdcdc;
 }
 
