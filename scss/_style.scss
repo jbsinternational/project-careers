@@ -9,12 +9,13 @@ body {
 .type,
 .star {
   h3 {
-    font-weight: lighter;
+    font-weight: 500;
+    font-size: 1em;
   }
   ul li {
     background: #fff;
     color: #707070;
-    padding: 8px 15px;
+    padding: 7px 15px;
     margin-left: -5px;
     border-left: 1px solid #dcdcdc;
     cursor: pointer;

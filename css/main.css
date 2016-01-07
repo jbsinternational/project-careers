@@ -275,7 +275,7 @@ ul li {
 .audience,
 .type,
 .star {
-  height: 60px;
+  height: 50px;
 }
 .audience h3,
 .type h3,
@@ -293,8 +293,15 @@ ul li {
   margin-left: 40px;
 }
 
+.star {
+  padding-bottom: 10px;
+}
 .star ul {
-  margin-left: 33px;
+  margin-left: 35px;
+}
+
+.audience ul {
+  margin-left: 8px;
 }
 
 body {
@@ -305,14 +312,15 @@ body {
 .audience h3,
 .type h3,
 .star h3 {
-  font-weight: lighter;
+  font-weight: 500;
+  font-size: 1em;
 }
 .audience ul li,
 .type ul li,
 .star ul li {
   background: #fff;
   color: #707070;
-  padding: 8px 15px;
+  padding: 7px 15px;
   margin-left: -5px;
   border-left: 1px solid #dcdcdc;
   cursor: pointer;
