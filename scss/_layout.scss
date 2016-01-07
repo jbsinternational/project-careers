@@ -37,7 +37,7 @@ ul li {
 .audience,
 .type,
 .star {
-  height: 55px;
+  height: 65px;
   h3{
     display: inline-block;
   }
@@ -48,6 +48,14 @@ ul li {
 }
 
 .logo {
+  background: #fff;
+  margin-bottom: 20px;
+  img{
+    display: block;
+    margin: auto;
+    min-width: 90%;
+    padding: 20px 20px 60px 20px;
+  }
 }
 
 .type ul {
@@ -55,7 +63,7 @@ ul li {
 }
 
 .star {
-  padding-bottom: 10px;
+  padding-bottom: 9px;
   ul {
     margin-left: 35px;
   }
