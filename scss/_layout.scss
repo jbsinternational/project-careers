@@ -7,7 +7,7 @@ $susy: (
 );
 
 body {
-  @include container(75%);
+  @include container(70%);
   margin-top: 50px;
   background-image: url("/Users/pmiller/Documents/Code/JBS/project-careers/img/background.png");
   -webkit-background-size: cover;
@@ -19,7 +19,7 @@ body {
 .resources {
   padding: 10px 20px;
 }
- 
+
 main, header {
   @include span(9 at 4);
 }
@@ -34,11 +34,13 @@ ul li {
 }
 
 .audience, .type, .star {
+  height: 60px;
   h3{
     display: inline-block;
   }
     ul{
       display: inline-block;
+      padding-left: 20px;
     }
 }
 
