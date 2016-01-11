@@ -8,21 +8,14 @@ body {
 .audience,
 .type,
 .star {
-  h3 {
-    font-weight: 500;
-    font-size: 1em;
-  }
   ul li {
     background: #fff;
     color: #707070;
-    padding: 10px 20px;
     margin-left: -5px;
     border-left: 1px solid #dcdcdc;
     cursor: pointer;
     border-top: 1px solid #dcdcdc;
     border-bottom: 1px solid #dcdcdc;
-    font-size: 0.9em;
-    letter-spacing: 0.5px;
     &:first-child{
       border-top-left-radius: 5px;
       border-bottom-left-radius: 5px;
@@ -58,7 +51,7 @@ body {
 .welcome {
   background: #db581f;
   color: #fff;
-  padding: 5px 35px 60px 30px;
+  padding: 2% 9% 10%;
   line-height: 1.75em;
   font-weight: lighter;
   h1{

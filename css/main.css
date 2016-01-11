@@ -225,15 +225,18 @@ ul li {
   padding-left: 20px;
 }
 
-.logo {
-  background: #fff;
+.logo_container {
+  background-color: #fff;
   margin-bottom: 20px;
+  padding: 0px 20px 56px;
 }
-.logo img {
-  display: block;
-  margin: auto;
-  min-width: 90%;
-  padding: 20px 20px 60px 20px;
+.logo_container .logo {
+  min-height: 226px;
+  min-width: 162px;
+  background-image: url("/Users/pmiller/Documents/Code/JBS/project-careers/img/ProjectCareerLogo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .type ul {
@@ -251,30 +254,110 @@ ul li {
   margin-left: 8px;
 }
 
+/* ==========================================================================
+    Media Queries
+   ========================================================================== */
+@media (min-width: 1200px) and (max-width: 1599px) {
+  .audience,
+  .type,
+  .star {
+    height: 55px;
+  }
+  .audience h3,
+  .type h3,
+  .star h3 {
+    font-weight: 500;
+    font-size: 0.9em;
+  }
+  .audience ul li,
+  .type ul li,
+  .star ul li {
+    padding: 5px 10px !important;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+  }
+  .audience ul li:first-child,
+  .type ul li:first-child,
+  .star ul li:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-left: 1px solid #dcdcdc;
+  }
+  .audience ul li:last-child,
+  .type ul li:last-child,
+  .star ul li:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-right: 1px solid #dcdcdc;
+  }
+}
+@media (min-width: 1600px) {
+  .audience,
+  .type,
+  .star {
+    height: 65px;
+  }
+  .audience h3,
+  .type h3,
+  .star h3 {
+    font-weight: 500;
+    font-size: 1em;
+  }
+  .audience ul li,
+  .type ul li,
+  .star ul li {
+    padding: 10px 20px;
+    margin-left: -5px;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+  }
+
+  .resources {
+    background: #fff;
+  }
+  .resources h2 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  .resources p {
+    margin: 0 0 10px;
+    font-size: 1em;
+    font-weight: 500;
+  }
+
+  .active {
+    background: #0267a8 !important;
+    color: #fff !important;
+  }
+
+  .welcome {
+    background: #db581f;
+    color: #fff;
+    padding: 2% 9% 10%;
+    line-height: 1.75em;
+    font-weight: lighter;
+  }
+  .welcome h1 {
+    font-size: 1.5em;
+    font-weight: lighter;
+    letter-spacing: .5px;
+  }
+}
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: lighter;
 }
 
-.audience h3,
-.type h3,
-.star h3 {
-  font-weight: 500;
-  font-size: 1em;
-}
 .audience ul li,
 .type ul li,
 .star ul li {
   background: #fff;
   color: #707070;
-  padding: 10px 20px;
   margin-left: -5px;
   border-left: 1px solid #dcdcdc;
   cursor: pointer;
   border-top: 1px solid #dcdcdc;
   border-bottom: 1px solid #dcdcdc;
-  font-size: 0.9em;
-  letter-spacing: 0.5px;
 }
 .audience ul li:first-child,
 .type ul li:first-child,
@@ -312,7 +395,7 @@ body {
 .welcome {
   background: #db581f;
   color: #fff;
-  padding: 5px 35px 60px 30px;
+  padding: 2% 9% 10%;
   line-height: 1.75em;
   font-weight: lighter;
 }
