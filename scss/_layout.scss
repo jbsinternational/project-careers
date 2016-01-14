@@ -23,13 +23,6 @@ body {
   padding: 10px 20px;
 }
 
-main, header {
-  @include span(7.5 at 3.5);
-}
-
-aside {
-  @include span(2.5 at 1);
-}
 
 ul li {
   list-style-type: none;
@@ -52,10 +45,9 @@ ul li {
 .logo_container {
   background-color: #fff;
   margin-bottom: 20px;
-  padding: 0px 20px 56px;
+  padding: 30px 20px 56px;
   .logo{
     min-height: 226px;
-    min-width: 162px;
     background-image:url("/Users/pmiller/Documents/Code/JBS/project-careers/img/ProjectCareerLogo.png");
     background-repeat:no-repeat;
     background-size:contain;
@@ -84,18 +76,136 @@ ul li {
 
 $mobile-portrait: 320px;
 $mobile-landscape: 480px;
-$ipad: 768px;
-$browser-small:1024px 1199px;
-$browser-medium:1200px 1599px;
-$browser-large:1600px;
+$ipad: 768px 1023px;
+$browser-small:1024px 1224px;
+$browser-medium:1225px 1599px;
+$browser-large:1600px 1999px;
+$browser-xLarge:2000px;
 
+@include breakpoint($ipad) {
+  main, header {
+    @include span(7.5 at 3.5);
+  }
+  aside {
+    @include span(2.5 at 1);
+    .welcome{
+      h1{
+      font-size: 1.2em;
+      }
+      p{
+        font-size: .8em;
+        line-height: 1.6em;
+      }
+    }
+  }
+  body{
+    @include container(95%);
+  }
+  .logo_container {
+    padding: 0 20px;
+    .logo{
+      padding: 0px;
+    }
+  }
+  .audience,
+  .type,
+  .star {
+    height: 50px;
+    h3{
+      font-size: .85em;
+    }
+    ul li{
+      font-size: .8em;
+      padding: 5px 10px;
+    }
+  }
+  div.resources{
+    padding: 10px 10px 12px 10px;
+    h2{
+      font-size: 1.1em;
+    }
+    p{
+    font-size: .74em;
+    }
+    .type ul {
+      margin-left: 35px;
+    }
+    .star {
+      padding-bottom: 3px;
+      ul {
+      margin-left: 30px;
+      }
+    }
+  }
+}
 
-@include breakpoint($browser-medium) {
+@include breakpoint($browser-small) {
+  body{
+    @include container(80%);
+  }
+  main, header {
+    @include span(7.5 at 3.5);
+  }
+  aside {
+    @include span(2.5 at 1);
+  }
+
+  .welcome {
+    h1{
+      font-size: 1.7em;
+    }
+    p{
+      font-size: .8em;
+    }
+  }
+
+  div.resources{
+    padding: 10px 20px 5px;
+    p{
+      font-size: .8em;
+    }
+    h2{
+      font-size: 1.1em;
+    }
+  }
+
+  .logo_container {
+    padding: 0 20px 16px;
+    .logo{
+      min-width: initial;
+    }
+  }
+
   .audience,
   .type,
   .star {
     height: 55px;
+    h3{
+      font-size: .9em;
+    }
+    ul li{
+      font-size: .8em;
+      padding: 8px 12px;
+    }
+  }
 
+}
+
+
+@include breakpoint($browser-medium) {
+  body{
+    @include container(75%);
+  }
+  main, header {
+    @include span(7.5 at 3.5);
+  }
+  aside {
+    @include span(2.5 at 1);
+  }
+  .audience,
+  .type,
+  .star {
+    height: 55px;
     h3 {
       font-weight: 500;
       font-size: 0.9em;
@@ -116,9 +226,41 @@ $browser-large:1600px;
       }
     }
   }
+  .logo_container {
+    padding: 0px 20px 24px;
+  }
+  .welcome{
+    h1 {
+      font-size: 1.4em;
+    }
+    p {
+      font-size: .9em;
+    }
+  }
+  div.resources {
+    p {
+      font-size: .9em;
+    }
+  }
 }
 
 @include breakpoint($browser-large) {
+  main, header {
+    @include span(7.5 at 3.5);
+  }
+  aside {
+    @include span(2.5 at 1);
+  }
+
+  body{
+    @include container(70%);
+  }
+  .logo_container {
+    padding: 0 20px 56px;
+    .logo{
+      min-width: initial;
+    }
+  }
   .audience,
   .type,
   .star {
@@ -140,11 +282,11 @@ $browser-large:1600px;
     background: #fff;
     h2 {
       margin: 0;
-      font-size: 1.2em;
+      font-size: 1.3em;
     }
     p {
       margin: 0 0 10px;
-      font-size: 1em;
+      font-size: 1.1em;
       font-weight: 500;
     }
   }
@@ -167,4 +309,71 @@ $browser-large:1600px;
     }
   }
 
+}
+
+@include breakpoint($browser-xLarge) {
+  main, header {
+    @include span(7.5 at 3.5);
+  }
+  aside {
+    @include span(2.5 at 1);
+  }
+
+  body{
+    @include container(50%);
+  }
+
+  .logo_container {
+    padding: 0 20px 56px;
+    .logo{
+      min-width: initial;
+    }
+  }
+  .audience,
+  .type,
+  .star {
+    height: 65px;
+    h3 {
+      font-weight: 500;
+      font-size: 1em;
+    }
+    ul li {
+      padding: 10px 20px;
+      margin-left: -5px;
+      font-size: 0.9em;
+      letter-spacing: 0.5px;
+    }
+  }
+
+
+  .resources {
+    background: #fff;
+    h2 {
+      margin: 0;
+      font-size: 1.3em;
+    }
+    p {
+      margin: 0 0 10px;
+      font-size: 1.1em;
+      font-weight: 500;
+    }
+  }
+
+  .active {
+    background: #0267a8 !important;
+    color: #fff !important;
+  }
+
+  .welcome {
+    background: #db581f;
+    color: #fff;
+    padding: 2% 9% 10%;
+    line-height: 1.75em;
+    font-weight: lighter;
+    h1{
+      font-size: 1.5em;
+      font-weight: lighter;
+      letter-spacing: .5px;
+    }
+  }
 }

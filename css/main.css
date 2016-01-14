@@ -189,20 +189,6 @@ body:after {
   padding: 10px 20px;
 }
 
-main, header {
-  width: 73.33333%;
-  float: right;
-  margin-left: 0.83333%;
-  margin-right: 0.83333%;
-}
-
-aside {
-  width: 23.33333%;
-  float: left;
-  margin-left: 0.83333%;
-  margin-right: 0.83333%;
-}
-
 ul li {
   list-style-type: none;
   display: inline-block;
@@ -228,11 +214,10 @@ ul li {
 .logo_container {
   background-color: #fff;
   margin-bottom: 20px;
-  padding: 0px 20px 56px;
+  padding: 30px 20px 56px;
 }
 .logo_container .logo {
   min-height: 226px;
-  min-width: 162px;
   background-image: url("/Users/pmiller/Documents/Code/JBS/project-careers/img/ProjectCareerLogo.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -257,7 +242,175 @@ ul li {
 /* ==========================================================================
     Media Queries
    ========================================================================== */
-@media (min-width: 1200px) and (max-width: 1599px) {
+@media (min-width: 768px) and (max-width: 1023px) {
+  main, header {
+    width: 73.33333%;
+    float: right;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
+  }
+
+  aside {
+    width: 23.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
+  }
+  aside .welcome h1 {
+    font-size: 1.2em;
+  }
+  aside .welcome p {
+    font-size: .8em;
+    line-height: 1.6em;
+  }
+
+  body {
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
+  .logo_container {
+    padding: 0 20px;
+  }
+  .logo_container .logo {
+    padding: 0px;
+  }
+
+  .audience,
+  .type,
+  .star {
+    height: 50px;
+  }
+  .audience h3,
+  .type h3,
+  .star h3 {
+    font-size: .85em;
+  }
+  .audience ul li,
+  .type ul li,
+  .star ul li {
+    font-size: .8em;
+    padding: 5px 10px;
+  }
+
+  div.resources {
+    padding: 10px 10px 12px 10px;
+  }
+  div.resources h2 {
+    font-size: 1.1em;
+  }
+  div.resources p {
+    font-size: .74em;
+  }
+  div.resources .type ul {
+    margin-left: 35px;
+  }
+  div.resources .star {
+    padding-bottom: 3px;
+  }
+  div.resources .star ul {
+    margin-left: 30px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1224px) {
+  body {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
+  main, header {
+    width: 73.33333%;
+    float: right;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
+  }
+
+  aside {
+    width: 23.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
+  }
+
+  .welcome h1 {
+    font-size: 1.7em;
+  }
+  .welcome p {
+    font-size: .8em;
+  }
+
+  div.resources {
+    padding: 10px 20px 5px;
+  }
+  div.resources p {
+    font-size: .8em;
+  }
+  div.resources h2 {
+    font-size: 1.1em;
+  }
+
+  .logo_container {
+    padding: 0 20px 16px;
+  }
+  .logo_container .logo {
+    min-width: initial;
+  }
+
+  .audience,
+  .type,
+  .star {
+    height: 55px;
+  }
+  .audience h3,
+  .type h3,
+  .star h3 {
+    font-size: .9em;
+  }
+  .audience ul li,
+  .type ul li,
+  .star ul li {
+    font-size: .8em;
+    padding: 8px 12px;
+  }
+}
+@media (min-width: 1225px) and (max-width: 1599px) {
+  body {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
+  main, header {
+    width: 73.33333%;
+    float: right;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
+  }
+
+  aside {
+    width: 23.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
+  }
+
   .audience,
   .type,
   .star {
@@ -290,8 +443,55 @@ ul li {
     border-bottom-right-radius: 5px;
     border-right: 1px solid #dcdcdc;
   }
+
+  .logo_container {
+    padding: 0px 20px 24px;
+  }
+
+  .welcome h1 {
+    font-size: 1.4em;
+  }
+  .welcome p {
+    font-size: .9em;
+  }
+
+  div.resources p {
+    font-size: .9em;
+  }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1999px) {
+  main, header {
+    width: 73.33333%;
+    float: right;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
+  }
+
+  aside {
+    width: 23.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
+  }
+
+  body {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
+  .logo_container {
+    padding: 0 20px 56px;
+  }
+  .logo_container .logo {
+    min-width: initial;
+  }
+
   .audience,
   .type,
   .star {
@@ -317,11 +517,95 @@ ul li {
   }
   .resources h2 {
     margin: 0;
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
   .resources p {
     margin: 0 0 10px;
+    font-size: 1.1em;
+    font-weight: 500;
+  }
+
+  .active {
+    background: #0267a8 !important;
+    color: #fff !important;
+  }
+
+  .welcome {
+    background: #db581f;
+    color: #fff;
+    padding: 2% 9% 10%;
+    line-height: 1.75em;
+    font-weight: lighter;
+  }
+  .welcome h1 {
+    font-size: 1.5em;
+    font-weight: lighter;
+    letter-spacing: .5px;
+  }
+}
+@media (min-width: 2000px) {
+  main, header {
+    width: 73.33333%;
+    float: right;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
+  }
+
+  aside {
+    width: 23.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
+  }
+
+  body {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
+  .logo_container {
+    padding: 0 20px 56px;
+  }
+  .logo_container .logo {
+    min-width: initial;
+  }
+
+  .audience,
+  .type,
+  .star {
+    height: 65px;
+  }
+  .audience h3,
+  .type h3,
+  .star h3 {
+    font-weight: 500;
     font-size: 1em;
+  }
+  .audience ul li,
+  .type ul li,
+  .star ul li {
+    padding: 10px 20px;
+    margin-left: -5px;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+  }
+
+  .resources {
+    background: #fff;
+  }
+  .resources h2 {
+    margin: 0;
+    font-size: 1.3em;
+  }
+  .resources p {
+    margin: 0 0 10px;
+    font-size: 1.1em;
     font-weight: 500;
   }
 
