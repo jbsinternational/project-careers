@@ -237,9 +237,27 @@ ul li {
     Media Queries
    ========================================================================== */
 @media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
   main, header {
     width: 73.33333%;
     float: right;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
+  }
+
+  main section.card {
+    width: 29.58333%;
+    float: left;
     margin-left: 0.83333%;
     margin-right: 0.83333%;
   }
@@ -256,17 +274,6 @@ ul li {
   aside .welcome p {
     font-size: .8em;
     line-height: 1.6em;
-  }
-
-  body {
-    max-width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  body:after {
-    content: " ";
-    display: block;
-    clear: both;
   }
 
   .logo_container {
@@ -311,6 +318,30 @@ ul li {
   div.resources .star ul {
     margin-left: 30px;
   }
+
+  main section.card {
+    margin: 20px 0 0 0;
+    padding: 10px .9% 0;
+  }
+  main section.card:nth-of-type(2), main section.card:nth-of-type(3) {
+    margin-left: 15px;
+    margin-right: 0px;
+  }
+  main section.card .card_resource {
+    font-size: 1em;
+  }
+  main section.card .card_title {
+    font-size: 0.85em;
+  }
+  main section.card .card_excerpt {
+    font-size: .8em;
+  }
+  main section.card .card_audience {
+    font-size: .75em;
+  }
+  main section.card .fa, main section.card div.card_tag h3 {
+    font-size: .9em;
+  }
 }
 @media (min-width: 1024px) and (max-width: 1224px) {
   body {
@@ -333,6 +364,13 @@ ul li {
 
   aside {
     width: 23.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
+  }
+
+  main section.card {
+    width: 29.58333%;
     float: left;
     margin-left: 0.83333%;
     margin-right: 0.83333%;
@@ -378,6 +416,18 @@ ul li {
     font-size: .8em;
     padding: 8px 12px;
   }
+
+  main section.card {
+    margin: 20px 0 0 0;
+    padding: 10px 1% 0;
+  }
+  main section.card:nth-of-type(2), main section.card:nth-of-type(3) {
+    margin-left: 15px;
+    margin-right: 0px;
+  }
+  main section.card .card_excerpt {
+    font-size: .9em;
+  }
 }
 @media (min-width: 1225px) and (max-width: 1599px) {
   body {
@@ -400,6 +450,13 @@ ul li {
 
   aside {
     width: 23.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
+  }
+
+  main section.card {
+    width: 29.58333%;
     float: left;
     margin-left: 0.83333%;
     margin-right: 0.83333%;
@@ -450,6 +507,18 @@ ul li {
   }
 
   div.resources p {
+    font-size: .9em;
+  }
+
+  main section.card {
+    margin: 20px 0 0 0;
+    padding: 10px 1% 0;
+  }
+  main section.card:nth-of-type(2), main section.card:nth-of-type(3) {
+    margin-left: 15px;
+    margin-right: 0px;
+  }
+  main section.card .card_excerpt {
     font-size: .9em;
   }
 }
@@ -557,6 +626,17 @@ ul li {
   }
 }
 @media (min-width: 2000px) {
+  body {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
   main, header {
     width: 73.33333%;
     float: right;
@@ -571,15 +651,11 @@ ul li {
     margin-right: 0.83333%;
   }
 
-  body {
-    max-width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  body:after {
-    content: " ";
-    display: block;
-    clear: both;
+  main .card {
+    width: 29.58333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
   }
 
   .logo_container {
@@ -639,10 +715,21 @@ ul li {
     font-weight: lighter;
     letter-spacing: .5px;
   }
+
+  main section.card {
+    margin: 20px 0 0 0;
+    padding: 10px 10px 0;
+  }
+  main section.card:nth-of-type(2), main section.card:nth-of-type(3) {
+    margin-left: 10px;
+    margin-right: 0px;
+  }
+  main section.card .card_excerpt {
+    font-size: .9em;
+  }
 }
 html {
   background-image: url("/Users/pmiller/Documents/Code/JBS/project-careers/img/background.png");
-  background-repeat: no-repeat;
   background-size: contain;
   background-position: center cover;
 }
