@@ -617,7 +617,8 @@ ul button {
     letter-spacing: .5px;
   }
   .welcome p {
-    font-size: .8em;
+    font-size: .85em;
+    line-height: 1.5em;
   }
 
   main section.card {
@@ -743,6 +744,11 @@ html {
 
 button:focus {
   outline: 0;
+}
+
+.font-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 span {

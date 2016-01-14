@@ -7,7 +7,12 @@ html{
   background-repeat: no-repeat;
 }
 
-button:focus {outline:0;}
+button:focus { outline:0; }
+
+.font-smoothing {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
 span {
   display: block;
