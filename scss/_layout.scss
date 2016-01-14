@@ -98,9 +98,9 @@ $browser-xLarge:2000px;
       h1{
       font-size: 1.2em;
       }
-      p{
+      p, a{
         font-size: .8em;
-        line-height: 1.6em;
+        line-height: 1.5em;
       }
     }
   }
@@ -184,8 +184,9 @@ $browser-xLarge:2000px;
     h1{
       font-size: 1.7em;
     }
-    p{
-      font-size: .8em;
+    p, a{
+      font-size: .85em;
+      line-height: 1.5em;
     }
   }
 
@@ -293,8 +294,9 @@ $browser-xLarge:2000px;
     h1 {
       font-size: 1.4em;
     }
-    p {
-      font-size: .9em;
+    p, a {
+      font-size: .85em;
+      line-height: 1.5em;
     }
   }
   div.filter-resources {
@@ -393,7 +395,7 @@ $browser-xLarge:2000px;
       font-weight: lighter;
       letter-spacing: .5px;
     }
-    p{
+    p, a {
       font-size: .85em;
       line-height: 1.5em;
     }
@@ -492,6 +494,10 @@ $browser-xLarge:2000px;
       font-size: 1.5em;
       font-weight: lighter;
       letter-spacing: .5px;
+    }
+    p, a {
+      font-size: .85em;
+      line-height: 1.5em;
     }
   }
   main section.card {

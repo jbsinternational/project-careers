@@ -277,9 +277,9 @@ ul button {
   aside .welcome h1 {
     font-size: 1.2em;
   }
-  aside .welcome p {
+  aside .welcome p, aside .welcome a {
     font-size: .8em;
-    line-height: 1.6em;
+    line-height: 1.5em;
   }
 
   .logo_container {
@@ -385,8 +385,9 @@ ul button {
   .welcome h1 {
     font-size: 1.7em;
   }
-  .welcome p {
-    font-size: .8em;
+  .welcome p, .welcome a {
+    font-size: .85em;
+    line-height: 1.5em;
   }
 
   div.filter-resources {
@@ -508,8 +509,9 @@ ul button {
   .welcome h1 {
     font-size: 1.4em;
   }
-  .welcome p {
-    font-size: .9em;
+  .welcome p, .welcome a {
+    font-size: .85em;
+    line-height: 1.5em;
   }
 
   div.filter-resources p {
@@ -616,7 +618,7 @@ ul button {
     font-weight: lighter;
     letter-spacing: .5px;
   }
-  .welcome p {
+  .welcome p, .welcome a {
     font-size: .85em;
     line-height: 1.5em;
   }
@@ -722,6 +724,10 @@ ul button {
     font-size: 1.5em;
     font-weight: lighter;
     letter-spacing: .5px;
+  }
+  .welcome p, .welcome a {
+    font-size: .85em;
+    line-height: 1.5em;
   }
 
   main section.card {
