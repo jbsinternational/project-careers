@@ -3,8 +3,8 @@
 html{
   background-image: url("../img/background.png");
   // background-repeat:no-repeat; // re-enable once background image issue is figured out
-  background-size:contain;
-  background-position:center cover;
+  background-size:cover;
+  background-repeat: no-repeat;
 }
 
 header, aside {

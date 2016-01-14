@@ -730,8 +730,8 @@ ul li {
 }
 html {
   background-image: url("../img/background.png");
-  background-size: contain;
-  background-position: center cover;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 header, aside {
