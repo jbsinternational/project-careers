@@ -7,6 +7,13 @@ html{
   background-repeat: no-repeat;
 }
 
+span {
+  display: block;
+  i {
+    text-decoration: underline;
+  }
+}
+
 header, aside {
   margin-top: 50px;
 }
@@ -62,13 +69,18 @@ body {
 .welcome {
   background: #db581f;
   color: #fff;
-  padding: 2% 9% 10%;
-  line-height: 1.75em;
   font-weight: lighter;
+  line-height: 1.75em;
   h1{
     font-size: 1.5em;
     font-weight: lighter;
     letter-spacing: .5px;
+  }
+  p{
+  }
+  a {
+    color: #fff;
+    line-height: 0;
   }
 }
 

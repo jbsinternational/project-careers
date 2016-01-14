@@ -601,8 +601,6 @@ ul li {
   }
 
   .welcome {
-    background: #db581f;
-    color: #fff;
     padding: 2% 9% 10%;
     line-height: 1.75em;
     font-weight: lighter;
@@ -611,6 +609,9 @@ ul li {
     font-size: 1.5em;
     font-weight: lighter;
     letter-spacing: .5px;
+  }
+  .welcome p, .welcome a {
+    font-size: .8em;
   }
 
   main section.card {
@@ -734,6 +735,13 @@ html {
   background-repeat: no-repeat;
 }
 
+span {
+  display: block;
+}
+span i {
+  text-decoration: underline;
+}
+
 header, aside {
   margin-top: 50px;
 }
@@ -790,14 +798,17 @@ body {
 .welcome {
   background: #db581f;
   color: #fff;
-  padding: 2% 9% 10%;
-  line-height: 1.75em;
   font-weight: lighter;
+  line-height: 1.75em;
 }
 .welcome h1 {
   font-size: 1.5em;
   font-weight: lighter;
   letter-spacing: .5px;
+}
+.welcome a {
+  color: #fff;
+  line-height: 0;
 }
 
 .card {
