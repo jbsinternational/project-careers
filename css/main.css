@@ -610,7 +610,7 @@ ul li {
     font-weight: lighter;
     letter-spacing: .5px;
   }
-  .welcome p, .welcome a {
+  .welcome p {
     font-size: .8em;
   }
 
@@ -800,6 +800,7 @@ body {
   color: #fff;
   font-weight: lighter;
   line-height: 1.75em;
+  padding: 2% 9% 10%;
 }
 .welcome h1 {
   font-size: 1.5em;
