@@ -327,6 +327,11 @@ ul button {
 
   main section.card {
     margin: 20px 0 0 0;
+  }
+  main section.card img {
+    width: 100%;
+  }
+  main section.card .card_inner {
     padding: 10px .9% 0;
   }
   main section.card:nth-of-type(2), main section.card:nth-of-type(3) {
@@ -426,7 +431,12 @@ ul button {
 
   main section.card {
     margin: 20px 0 0 0;
-    padding: 10px 1% 0;
+  }
+  main section.card img {
+    width: 100%;
+  }
+  main section.card .card_inner {
+    padding: 10px 5% 0;
   }
   main section.card:nth-of-type(2), main section.card:nth-of-type(3) {
     margin-left: 15px;
@@ -520,7 +530,12 @@ ul button {
 
   main section.card {
     margin: 20px 0 0 0;
-    padding: 10px 1% 0;
+  }
+  main section.card img {
+    width: 100%;
+  }
+  main section.card .card_inner {
+    padding: 10px 5% 0;
   }
   main section.card:nth-of-type(2), main section.card:nth-of-type(3) {
     margin-left: 15px;
@@ -625,6 +640,11 @@ ul button {
 
   main section.card {
     margin: 20px 0 0 0;
+  }
+  main section.card img {
+    width: 100%;
+  }
+  main section.card .card_inner {
     padding: 10px 10px 0;
   }
   main section.card:nth-of-type(2), main section.card:nth-of-type(3) {
@@ -732,6 +752,11 @@ ul button {
 
   main section.card {
     margin: 20px 0 0 0;
+  }
+  main section.card img {
+    width: 100%;
+  }
+  main section.card .card_inner {
     padding: 10px 10px 0;
   }
   main section.card:nth-of-type(2), main section.card:nth-of-type(3) {
