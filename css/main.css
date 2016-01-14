@@ -19,8 +19,8 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
+  border-top: 1px dotted #b5b5b5;
+  margin: 0;
   padding: 0;
 }
 
@@ -172,12 +172,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
-  margin-top: 50px;
-  background-image: url("/Users/pmiller/Documents/Code/JBS/project-careers/img/background.png");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 body:after {
   content: " ";
@@ -460,6 +454,17 @@ ul li {
   }
 }
 @media (min-width: 1600px) and (max-width: 1999px) {
+  body {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
   main, header {
     width: 73.33333%;
     float: right;
@@ -474,15 +479,11 @@ ul li {
     margin-right: 0.83333%;
   }
 
-  body {
-    max-width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  body:after {
-    content: " ";
-    display: block;
-    clear: both;
+  main .card {
+    width: 29.58333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
   }
 
   .logo_container {
@@ -541,6 +542,18 @@ ul li {
     font-size: 1.5em;
     font-weight: lighter;
     letter-spacing: .5px;
+  }
+
+  main section.card {
+    margin: 20px 0 0 0;
+    padding: 10px 10px 0;
+  }
+  main section.card:nth-of-type(2), main section.card:nth-of-type(3) {
+    margin-left: 15px;
+    margin-right: 0px;
+  }
+  main section.card .card_excerpt {
+    font-size: .9em;
   }
 }
 @media (min-width: 2000px) {
@@ -627,6 +640,17 @@ ul li {
     letter-spacing: .5px;
   }
 }
+html {
+  background-image: url("/Users/pmiller/Documents/Code/JBS/project-careers/img/background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center cover;
+}
+
+header, aside {
+  margin-top: 50px;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: lighter;
@@ -687,4 +711,35 @@ body {
   font-size: 1.5em;
   font-weight: lighter;
   letter-spacing: .5px;
+}
+
+.card {
+  margin-right: 0px;
+  margin-left: 0px;
+  background: #fff;
+}
+.card .card_resource {
+  color: #db581f;
+  margin: 0;
+  font-weight: 300;
+  font-size: 1em;
+}
+.card .card_title {
+  color: #0267a8;
+  font-size: 1em;
+  margin: 0;
+}
+.card .card_exceprt {
+  font-size: .8em;
+}
+.card .card_audience {
+  font-weight: 800;
+  font-size: .8em;
+}
+.card h3 {
+  display: inline-block;
+}
+.card .fa, .card div.card_tag h3 {
+  color: #35792a;
+  font-size: .95em;
 }

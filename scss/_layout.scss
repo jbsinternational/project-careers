@@ -11,12 +11,6 @@ $susy: (
 body {
   @include container(69%);
   padding-left: 20px;
-  margin-top: 50px;
-  background-image: url("/Users/pmiller/Documents/Code/JBS/project-careers/img/background.png");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 .resources {
@@ -149,6 +143,9 @@ $browser-xLarge:2000px;
   aside {
     @include span(2.5 at 1);
   }
+  // main section.card {
+  //   @include span(3.125 at 3.5);
+  // }
 
   .welcome {
     h1{
@@ -202,6 +199,9 @@ $browser-xLarge:2000px;
   aside {
     @include span(2.5 at 1);
   }
+  // main section.card {
+  //   @include span(3.125 at 3.5);
+  // }
   .audience,
   .type,
   .star {
@@ -245,15 +245,17 @@ $browser-xLarge:2000px;
 }
 
 @include breakpoint($browser-large) {
+  body{
+    @include container(70%);
+  }
   main, header {
     @include span(7.5 at 3.5);
   }
   aside {
     @include span(2.5 at 1);
   }
-
-  body{
-    @include container(70%);
+  main .card {
+    @include span(3.125 at 3.5);
   }
   .logo_container {
     padding: 0 20px 56px;
@@ -276,7 +278,6 @@ $browser-xLarge:2000px;
       letter-spacing: 0.5px;
     }
   }
-
 
   .resources {
     background: #fff;
@@ -309,6 +310,32 @@ $browser-xLarge:2000px;
     }
   }
 
+  main section.card {
+    margin: 20px 0 0 0;
+    padding: 10px 10px 0;
+    &:nth-of-type(2), &:nth-of-type(3){
+      margin-left: 15px;
+      margin-right: 0px;
+    }
+    .card_resource{
+
+    }
+    .card_title{
+
+    }
+    .card_excerpt{
+      font-size: .9em;
+    }
+    .card_audience {
+
+    }
+    h3 {
+
+    }
+    .fa, div.card_tag h3{
+
+    }
+  }
 }
 
 @include breakpoint($browser-xLarge) {

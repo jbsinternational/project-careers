@@ -10,6 +10,8 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.js"></script>
   <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
@@ -23,34 +25,34 @@
     <div class="resources">
       <h2>Filter Resources</h2>
       <p>Use the following controls to filter resources by audience, resource type, and/or STAR practice.</p>
-      <div class="audience">
+      <div class="audience button-group filters-button-group">
         <h3>Audience</h3>
         <ul>
-          <li>Students</li>
-          <li>Veterans</li>
-          <li>Educators</li>
-          <li>Service Providers</li>
-          <li>Employers</li>
+          <li data-filter=".students">Students</li>
+          <li data-filter=".veterans">Veterans</li>
+          <li data-filter=".educators">Educators</li>
+          <li data-filter=".service_providers">Service Providers</li>
+          <li data-filter=".employers">Employers</li>
         </ul>
       </div>
-      <div class="type">
+      <div class="type button-group filters-button-group">
         <h3>Type</h3>
         <ul>
-          <li>Apps</li>
-          <li>Information</li>
-          <li>Videos</li>
-          <li>Podcasts</li>
-          <li>Vulputate</li>
-          <li>Fringilla</li>
+          <li data-filter=".apps">Apps</li>
+          <li data-filter=".information">Information</li>
+          <li data-filter=".videos">Videos</li>
+          <li data-filter=".podcasts">Podcasts</li>
+          <li data-filter=".vulputate">Vulputate</li>
+          <li data-filter=".fringilla">Fringilla</li>
         </ul>
       </div>
-      <div class="star">
+      <div class="star button-group filters-button-group">
         <h3>STAR</h3>
         <ul>
-          <li>Student</li>
-          <li>Technology</li>
-          <li>Accomodations</li>
-          <li>Resources</li>
+          <li data-filter=".student">Student</li>
+          <li data-filter=".technology">Technology</li>
+          <li data-filter=".accomodations">Accomodations</li>
+          <li data-filter=".resources">Resources</li>
         </ul>
       </div>
     </div>
@@ -66,8 +68,112 @@
       <a href="www.google.com">Read more about Project Career and Star ></a>
     </div>
   </aside>
-  <main>
-    <!-- Masonry / Isotope Cards will go here -->
+  <main class="grid">
+    <div class="row">
+      <section class="card">
+        <h3 class="card_resource">Apps</h3>
+        <hr>
+        <h3 class="card_title">Commodo Condimentum Aenean Ornare Fermentum</h3>
+        <p class="card_excerpt">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+        <p class="card_audience">Audience: Students, Employers</p>
+        <hr>
+        <div class="card_tag">
+          <i class="fa fa-star"></i><h3>Student</h3>
+        </div>
+      </section>
+      <section class="card">
+        <h3 class="card_resource">Apps</h3>
+        <hr>
+        <h3 class="card_title">Commodo Condimentum Aenean Ornare Fermentum</h3>
+          <p class="card_excerpt">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+          <p class="card_audience">Audience: Students, Employers</p>
+        <hr>
+        <div class="card_tag">
+          <i class="fa fa-star"></i><h3>Accomodations</h3>
+        </div>
+      </section>
+      <section class="card">
+        <h3 class="card_resource">Apps</h3>
+        <hr>
+        <h3 class="card_title">Commodo Condimentum Aenean Ornare Fermentum</h3>
+        <p class="card_excerpt">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+        <p class="card_audience">Audience: Students, Employers</p>
+        <hr>
+        <div class="card_tag">
+          <i class="fa fa-star"></i><h3>Resources</h3>
+        </div>
+      </section>
+    </div>
+    <div class="row">
+      <section class="card">
+        <h3 class="card_resource">Apps</h3>
+        <hr>
+        <h3 class="card_title">Commodo Condimentum Aenean Ornare Fermentum</h3>
+        <p class="card_excerpt">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+        <p class="card_audience">Audience: Students, Employers</p>
+        <hr>
+        <div class="card_tag">
+          <i class="fa fa-star"></i><h3>Technology</h3>
+        </div>
+      </section>
+      <section class="card">
+        <h3 class="card_resource">Apps</h3>
+        <hr>
+        <h3 class="card_title">Commodo Condimentum Aenean Ornare Fermentum</h3>
+          <p class="card_excerpt">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+          <p class="card_audience">Audience: Students, Employers</p>
+        <hr>
+        <div class="card_tag">
+          <i class="fa fa-star"></i><h3>Student</h3>
+        </div>
+      </section>
+      <section class="card">
+        <h3 class="card_resource">Apps</h3>
+        <hr>
+        <h3 class="card_title">Commodo Condimentum Aenean Ornare Fermentum</h3>
+        <p class="card_excerpt">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+        <p class="card_audience">Audience: Students, Employers</p>
+        <hr>
+        <div class="card_tag">
+          <i class="fa fa-star"></i><h3>Accomodations</h3>
+        </div>
+      </section>
+    </div>
+    <div class="row">
+      <section class="card">
+        <h3 class="card_resource">Apps</h3>
+        <hr>
+        <h3 class="card_title">Commodo Condimentum Aenean Ornare Fermentum</h3>
+        <p class="card_excerpt">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+        <p class="card_audience">Audience: Students, Employers</p>
+        <hr>
+        <div class="card_tag">
+          <i class="fa fa-star"></i><h3>Resources</h3>
+        </div>
+      </section>
+      <section class="card">
+        <h3 class="card_resource">Apps</h3>
+        <hr>
+        <h3 class="card_title">Commodo Condimentum Aenean Ornare Fermentum</h3>
+          <p class="card_excerpt">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+          <p class="card_audience">Audience: Students, Employers</p>
+        <hr>
+        <div class="card_tag">
+          <i class="fa fa-star"></i><h3>Technology</h3>
+        </div>
+      </section>
+      <section class="card">
+        <h3 class="card_resource">Apps</h3>
+        <hr>
+        <h3 class="card_title">Commodo Condimentum Aenean Ornare Fermentum</h3>
+        <p class="card_excerpt">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+        <p class="card_audience">Audience: Students, Employers</p>
+        <hr>
+        <div class="card_tag">
+          <i class="fa fa-star"></i><h3>Technology</h3>
+        </div>
+      </section>
+    </div>
   </main>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

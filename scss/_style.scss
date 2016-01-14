@@ -1,5 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500);
 
+html{
+  background-image: url("/Users/pmiller/Documents/Code/JBS/project-careers/img/background.png");
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center cover;
+}
+
+header, aside {
+  margin-top: 50px;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: lighter;
@@ -58,5 +69,36 @@ body {
     font-size: 1.5em;
     font-weight: lighter;
     letter-spacing: .5px;
+  }
+}
+
+.card {
+  margin-right: 0px;
+  margin-left: 0px;
+  background: #fff;
+  .card_resource{
+    color: #db581f;
+    margin: 0;
+    font-weight: 300;
+    font-size: 1em;
+  }
+  .card_title{
+    color: #0267a8;
+    font-size: 1em;
+    margin: 0;
+  }
+  .card_exceprt {
+    font-size: .8em;
+  }
+  .card_audience {
+    font-weight: 800;
+    font-size: .8em;
+  }
+  h3{
+    display: inline-block;
+  }
+  .fa, div.card_tag h3 {
+    color: #35792a;
+    font-size: .95em;
   }
 }
