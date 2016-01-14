@@ -857,3 +857,7 @@ body {
   color: #35792a;
   font-size: .95em;
 }
+
+section.card.element-item.students.employers.resources {
+  margin-left: 0;
+}
