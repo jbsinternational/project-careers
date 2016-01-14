@@ -7,6 +7,8 @@ html{
   background-repeat: no-repeat;
 }
 
+button:focus {outline:0;}
+
 span {
   display: block;
   i {
@@ -26,10 +28,10 @@ body {
 .audience,
 .type,
 .star {
-  ul li {
+  ul button {
     background: #fff;
     color: #707070;
-    margin-left: -5px;
+    margin-left: -6px;
     border-left: 1px solid #dcdcdc;
     cursor: pointer;
     border-top: 1px solid #dcdcdc;
@@ -44,11 +46,14 @@ body {
       border-bottom-right-radius: 5px;
       border-right: 1px solid #dcdcdc;
     }
+    &:active{
+      outline: none;
+    }
   }
 }
 
 
-.resources {
+.filter-resources {
   background: #fff;
   h2 {
     margin: 0;
@@ -61,7 +66,7 @@ body {
   }
 }
 
-.active {
+.is-checked {
   background: #0267a8 !important;
   color: #fff !important;
 }
@@ -72,7 +77,6 @@ body {
   font-weight: lighter;
   line-height: 1.75em;
   padding: 2% 9% 10%;
-
   h1{
     font-size: 1.5em;
     font-weight: lighter;

@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.js"></script>
   <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
@@ -22,37 +21,37 @@
 
   <!-- Site Content Begins Here -->
   <header>
-    <div class="resources">
+    <div class="filter-resources filters">
       <h2>Filter Resources</h2>
       <p>Use the following controls to filter resources by audience, resource type, and/or STAR practice.</p>
       <div class="audience button-group filters-button-group">
         <h3>Audience</h3>
         <ul>
-          <li data-filter=".students" class="active">Students</li>
-          <li data-filter=".veterans" class="active">Veterans</li>
-          <li data-filter=".educators" class="active">Educators</li>
-          <li data-filter=".service_providers">Service Providers</li>
-          <li data-filter=".employers" class="active">Employers</li>
+          <button class="button" data-filter=".students">Students</button>
+          <button class="button" data-filter=".veterans">Veterans</button>
+          <button class="button" data-filter=".educators">Educators</button>
+          <button class="button" data-filter=".service_providers">Service Providers</button>
+          <button class="button" data-filter=".employers">Employers</button>
         </ul>
       </div>
       <div class="type button-group filters-button-group">
         <h3>Type</h3>
         <ul>
-          <li data-filter=".apps" class="active">Apps</li>
-          <li data-filter=".information">Information</li>
-          <li data-filter=".videos" class="active">Videos</li>
-          <li data-filter=".podcasts" class="active">Podcasts</li>
-          <li data-filter=".vulputate">Vulputate</li>
-          <li data-filter=".fringilla" class="active">Fringilla</li>
+          <button class="button" data-filter=".apps">Apps</button>
+          <button class="button" data-filter=".information">Information</button>
+          <button class="button" data-filter=".videos">Videos</button>
+          <button class="button" data-filter=".podcasts">Podcasts</button>
+          <button class="button" data-filter=".vulputate">Vulputate</button>
+          <button class="button" data-filter=".fringilla">Fringilla</button>
         </ul>
       </div>
       <div class="star button-group filters-button-group">
         <h3>STAR</h3>
         <ul>
-          <li data-filter=".student" class="active">Student</li>
-          <li data-filter=".technology" class="active">Technology</li>
-          <li data-filter=".accomodations" class="active">Accomodations</li>
-          <li data-filter=".resources" class="active">Resources</li>
+          <button class="button" data-filter=".student">Student</button>
+          <button class="button" data-filter=".technology">Technology</button>
+          <button class="button" data-filter=".accomodations">Accomodations</button>
+          <button class="button" data-filter=".resources">Resources</button>
         </ul>
       </div>
     </div>
@@ -70,29 +69,29 @@
   </aside>
   <main class="grid">
     <div class="row">
-      <section class="card">
+      <section class="card element-item students employers student" data-category="students employers student">
         <h3 class="card_resource">Apps</h3>
         <hr>
         <h3 class="card_title">Commodo Condimentum Aenean Ornare Fermentum</h3>
         <p class="card_excerpt">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-        <p class="card_audience">Audience: Students, Employers</p>
+        <p class="card_audience students employers">Audience: Students, Employers</p>
         <hr>
         <div class="card_tag">
           <i class="fa fa-star"></i><h3>Student</h3>
         </div>
       </section>
-      <section class="card">
+      <section class="card element-item students employers accomodations" data-category="students employers accomodations">
         <h3 class="card_resource">Apps</h3>
         <hr>
         <h3 class="card_title">Commodo Condimentum Aenean Ornare Fermentum</h3>
           <p class="card_excerpt">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-          <p class="card_audience">Audience: Students, Employers</p>
+          <p class="card_audience students employers">Audience: Students, Employers</p>
         <hr>
         <div class="card_tag">
           <i class="fa fa-star"></i><h3>Accomodations</h3>
         </div>
       </section>
-      <section class="card">
+      <section class="card element-item students employers resources" data-category="students employers resources">
         <h3 class="card_resource">Apps</h3>
         <hr>
         <h3 class="card_title">Commodo Condimentum Aenean Ornare Fermentum</h3>
@@ -105,7 +104,7 @@
       </section>
     </div>
     <div class="row">
-      <section class="card">
+      <section class="card element-item students employers technology" data-category="students employers technology">
         <h3 class="card_resource">Apps</h3>
         <hr>
         <h3 class="card_title">Commodo Condimentum Aenean Ornare Fermentum</h3>
@@ -116,7 +115,7 @@
           <i class="fa fa-star"></i><h3>Technology</h3>
         </div>
       </section>
-      <section class="card">
+      <section class="card element-item students employers student" data-category="students employers student">
         <h3 class="card_resource">Apps</h3>
         <hr>
         <h3 class="card_title">Commodo Condimentum Aenean Ornare Fermentum</h3>
@@ -127,7 +126,7 @@
           <i class="fa fa-star"></i><h3>Student</h3>
         </div>
       </section>
-      <section class="card">
+      <section class="card element-item students employers accomodations" data-category="students employers accomodations">
         <h3 class="card_resource">Apps</h3>
         <hr>
         <h3 class="card_title">Commodo Condimentum Aenean Ornare Fermentum</h3>
@@ -140,7 +139,7 @@
       </section>
     </div>
     <div class="row">
-      <section class="card">
+      <section class="card element-item students employers resources" data-category="students employers resources">
         <h3 class="card_resource">Apps</h3>
         <hr>
         <h3 class="card_title">Commodo Condimentum Aenean Ornare Fermentum</h3>
@@ -151,7 +150,7 @@
           <i class="fa fa-star"></i><h3>Resources</h3>
         </div>
       </section>
-      <section class="card">
+      <section class="card element-item students employers technology" data-category="students employers technology">
         <h3 class="card_resource">Apps</h3>
         <hr>
         <h3 class="card_title">Commodo Condimentum Aenean Ornare Fermentum</h3>
@@ -162,7 +161,7 @@
           <i class="fa fa-star"></i><h3>Technology</h3>
         </div>
       </section>
-      <section class="card">
+      <section class="card element-item students employers technology" data-category="students employers technology">
         <h3 class="card_resource">Apps</h3>
         <hr>
         <h3 class="card_title">Commodo Condimentum Aenean Ornare Fermentum</h3>
@@ -176,7 +175,11 @@
     </div>
   </main>
 
+  <!-- Placed all JS libraries at bottom for faster load times -->
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+
   <script>
     window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')
   </script>

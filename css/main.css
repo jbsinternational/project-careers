@@ -179,7 +179,13 @@ body:after {
   clear: both;
 }
 
-.resources {
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.filter-resources {
   padding: 10px 20px;
 }
 
@@ -300,22 +306,22 @@ ul li {
     padding: 5px 10px;
   }
 
-  div.resources {
+  div.filter-resources {
     padding: 10px 10px 12px 10px;
   }
-  div.resources h2 {
+  div.filter-resources h2 {
     font-size: 1.1em;
   }
-  div.resources p {
+  div.filter-resources p {
     font-size: .74em;
   }
-  div.resources .type ul {
+  div.filter-resources .type ul {
     margin-left: 35px;
   }
-  div.resources .star {
+  div.filter-resources .star {
     padding-bottom: 3px;
   }
-  div.resources .star ul {
+  div.filter-resources .star ul {
     margin-left: 30px;
   }
 
@@ -383,13 +389,13 @@ ul li {
     font-size: .8em;
   }
 
-  div.resources {
+  div.filter-resources {
     padding: 10px 20px 5px;
   }
-  div.resources p {
+  div.filter-resources p {
     font-size: .8em;
   }
-  div.resources h2 {
+  div.filter-resources h2 {
     font-size: 1.1em;
   }
 
@@ -506,7 +512,7 @@ ul li {
     font-size: .9em;
   }
 
-  div.resources p {
+  div.filter-resources p {
     font-size: .9em;
   }
 
@@ -582,14 +588,14 @@ ul li {
     letter-spacing: 0.5px;
   }
 
-  .resources {
+  .filter-resources {
     background: #fff;
   }
-  .resources h2 {
+  .filter-resources h2 {
     margin: 0;
     font-size: 1.3em;
   }
-  .resources p {
+  .filter-resources p {
     margin: 0 0 10px;
     font-size: 1.1em;
     font-weight: 500;
@@ -686,14 +692,14 @@ ul li {
     letter-spacing: 0.5px;
   }
 
-  .resources {
+  .filter-resources {
     background: #fff;
   }
-  .resources h2 {
+  .filter-resources h2 {
     margin: 0;
     font-size: 1.3em;
   }
-  .resources p {
+  .filter-resources p {
     margin: 0 0 10px;
     font-size: 1.1em;
     font-weight: 500;
@@ -735,6 +741,10 @@ html {
   background-repeat: no-repeat;
 }
 
+button:focus {
+  outline: 0;
+}
+
 span {
   display: block;
 }
@@ -751,46 +761,51 @@ body {
   font-weight: lighter;
 }
 
-.audience ul li,
-.type ul li,
-.star ul li {
+.audience ul button,
+.type ul button,
+.star ul button {
   background: #fff;
   color: #707070;
-  margin-left: -5px;
+  margin-left: -6px;
   border-left: 1px solid #dcdcdc;
   cursor: pointer;
   border-top: 1px solid #dcdcdc;
   border-bottom: 1px solid #dcdcdc;
 }
-.audience ul li:first-child,
-.type ul li:first-child,
-.star ul li:first-child {
+.audience ul button:first-child,
+.type ul button:first-child,
+.star ul button:first-child {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   border-left: 1px solid #dcdcdc;
 }
-.audience ul li:last-child,
-.type ul li:last-child,
-.star ul li:last-child {
+.audience ul button:last-child,
+.type ul button:last-child,
+.star ul button:last-child {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   border-right: 1px solid #dcdcdc;
 }
+.audience ul button:active,
+.type ul button:active,
+.star ul button:active {
+  outline: none;
+}
 
-.resources {
+.filter-resources {
   background: #fff;
 }
-.resources h2 {
+.filter-resources h2 {
   margin: 0;
   font-size: 1.2em;
 }
-.resources p {
+.filter-resources p {
   margin: 0 0 10px;
   font-size: 1em;
   font-weight: 500;
 }
 
-.active {
+.is-checked {
   background: #0267a8 !important;
   color: #fff !important;
 }
