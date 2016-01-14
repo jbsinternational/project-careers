@@ -24,7 +24,7 @@ body {
 }
 
 
-ul li {
+ul button {
   list-style-type: none;
   display: inline-block;
 }
@@ -118,7 +118,7 @@ $browser-xLarge:2000px;
     h3{
       font-size: .85em;
     }
-    ul li{
+    ul button{
       font-size: .8em;
       padding: 5px 10px;
     }
@@ -213,7 +213,7 @@ $browser-xLarge:2000px;
     h3{
       font-size: .9em;
     }
-    ul li{
+    ul button{
       font-size: .8em;
       padding: 8px 12px;
     }
@@ -270,7 +270,7 @@ $browser-xLarge:2000px;
       font-weight: 500;
       font-size: 0.9em;
     }
-    ul li {
+    ul button {
       padding: 5px 10px !important;
       font-size: 0.9em;
       letter-spacing: 0.5px;
@@ -358,7 +358,7 @@ $browser-xLarge:2000px;
       font-weight: 500;
       font-size: 1em;
     }
-    ul li {
+    ul button {
       padding: 10px 20px;
       margin-left: -5px;
       font-size: 0.9em;
@@ -454,7 +454,7 @@ $browser-xLarge:2000px;
       font-weight: 500;
       font-size: 1em;
     }
-    ul li {
+    ul button {
       padding: 10px 20px;
       margin-left: -5px;
       font-size: 0.9em;

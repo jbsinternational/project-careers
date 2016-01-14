@@ -189,7 +189,7 @@ body:after {
   padding: 10px 20px;
 }
 
-ul li {
+ul button {
   list-style-type: none;
   display: inline-block;
 }
@@ -299,9 +299,9 @@ ul li {
   .star h3 {
     font-size: .85em;
   }
-  .audience ul li,
-  .type ul li,
-  .star ul li {
+  .audience ul button,
+  .type ul button,
+  .star ul button {
     font-size: .8em;
     padding: 5px 10px;
   }
@@ -416,9 +416,9 @@ ul li {
   .star h3 {
     font-size: .9em;
   }
-  .audience ul li,
-  .type ul li,
-  .star ul li {
+  .audience ul button,
+  .type ul button,
+  .star ul button {
     font-size: .8em;
     padding: 8px 12px;
   }
@@ -479,23 +479,23 @@ ul li {
     font-weight: 500;
     font-size: 0.9em;
   }
-  .audience ul li,
-  .type ul li,
-  .star ul li {
+  .audience ul button,
+  .type ul button,
+  .star ul button {
     padding: 5px 10px !important;
     font-size: 0.9em;
     letter-spacing: 0.5px;
   }
-  .audience ul li:first-child,
-  .type ul li:first-child,
-  .star ul li:first-child {
+  .audience ul button:first-child,
+  .type ul button:first-child,
+  .star ul button:first-child {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     border-left: 1px solid #dcdcdc;
   }
-  .audience ul li:last-child,
-  .type ul li:last-child,
-  .star ul li:last-child {
+  .audience ul button:last-child,
+  .type ul button:last-child,
+  .star ul button:last-child {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     border-right: 1px solid #dcdcdc;
@@ -579,9 +579,9 @@ ul li {
     font-weight: 500;
     font-size: 1em;
   }
-  .audience ul li,
-  .type ul li,
-  .star ul li {
+  .audience ul button,
+  .type ul button,
+  .star ul button {
     padding: 10px 20px;
     margin-left: -5px;
     font-size: 0.9em;
@@ -683,9 +683,9 @@ ul li {
     font-weight: 500;
     font-size: 1em;
   }
-  .audience ul li,
-  .type ul li,
-  .star ul li {
+  .audience ul button,
+  .type ul button,
+  .star ul button {
     padding: 10px 20px;
     margin-left: -5px;
     font-size: 0.9em;
