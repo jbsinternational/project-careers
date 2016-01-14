@@ -212,7 +212,7 @@ ul li {
 }
 .logo_container .logo {
   min-height: 226px;
-  background-image: url("/img/ProjectCareerLogo.png");
+  background-image: url("../img/ProjectCareerLogo.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -729,7 +729,7 @@ ul li {
   }
 }
 html {
-  background-image: url("img/background.png");
+  background-image: url("../img/background.png");
   background-size: contain;
   background-position: center cover;
 }
