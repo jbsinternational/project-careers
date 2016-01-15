@@ -262,9 +262,106 @@ ul button {
   padding: 1px 20px 20px 20px;
 }
 
+.about_header {
+  width: 90%;
+}
+.about_header .logo {
+  max-width: 113px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* ==========================================================================
     Media Queries
    ========================================================================== */
+@media (min-width: 320px) and (max-width: 480px) {
+  .resources_container {
+    padding: 10px 0;
+  }
+  .resources_container h1 {
+    margin: 0;
+    font-size: 1em;
+  }
+  .resources_container .filter-resources {
+    padding: 10px 20px;
+  }
+
+  .welcome {
+    font-size: .8em;
+  }
+
+  ul button {
+    list-style-type: none;
+    display: inline-block;
+  }
+
+  .audience,
+  .type,
+  .star {
+    height: 50px;
+  }
+  .audience h3,
+  .type h3,
+  .star h3 {
+    display: inline-block;
+    font-size: .75em;
+  }
+  .audience button,
+  .type button,
+  .star button {
+    font-size: .7em;
+  }
+  .audience ul,
+  .type ul,
+  .star ul {
+    display: inline-block;
+    padding-left: 20px;
+  }
+
+  .logo_container {
+    background-color: #fff;
+    padding: 30px 20px 56px;
+  }
+  .logo_container .logo {
+    min-height: 226px;
+    background-image: url("../img/ProjectCareerLogo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .type ul {
+    margin-left: 40px;
+  }
+
+  .star {
+    padding-bottom: 9px;
+  }
+  .star ul {
+    margin-left: 35px;
+  }
+
+  .audience ul {
+    margin-left: 8px;
+  }
+
+  .card img {
+    width: 100%;
+  }
+  .card .card_inner {
+    padding: 10px;
+  }
+
+  .about {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 1px 20px 20px 20px;
+  }
+
+  .about_header {
+    width: 80%;
+  }
+}
 @media (min-width: 768px) and (max-width: 1023px) {
   body {
     max-width: 95%;
@@ -852,6 +949,9 @@ span i {
   text-decoration: underline;
 }
 
+.logo_container .logo span {
+  display: none;
+}
 .logo_container h1 {
   margin: 0;
 }

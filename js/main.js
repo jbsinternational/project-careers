@@ -11,27 +11,36 @@
   // store filter for each group
   var filters = {};
 
+  var data = {
+    audience: 'students veterans educators serviceProviders employers',
+    type: 'apps information videos podcasts vulputate fringilla',
+    colors: 'apps information videos podcasts',
+    sizes: 'student technology accomodations resources'
+  };
+
   $('.filters').on('click', '.button', function() {
-    var $this = $(this);
-    // get group key
-    var $buttonGroup = $this.parents('.button-group');
-    var filterGroup = $buttonGroup.attr('data-filter-group');
-    // set filter for group
-    filters[filterGroup] = $this.attr('data-filter');
-    // combine filters
-    var filterValue = concatValues(filters);
+    console.log('button clicked');
+    var filters = '';
+    var selected = $(this).data('selected');
+    var group = $(this).data('group');
+    var currentFilter = $(this).data('filter');
+    console.log('current filter ' + selected);
+    if(selected == "0") {
+      console.log('filter found');
+      filters = $(this).data('filter');
+      $(this).data('selected', "1");
+      $(this).addClass('is-checked')
+    }
+    else {
+      console.log('filter unchecked');
+      $(this).data('selected', "0");
+      $(this).removeClass('is-checked')
+    }
+    console.log('filters ' + filters);
+
     // set filter for Isotope
     $grid.isotope({
-      filter: filterValue
-    });
-  });
-
-  // change is-checked class on buttons
-  $('.button-group').each(function(i, buttonGroup) {
-    var $buttonGroup = $(buttonGroup);
-    $buttonGroup.on('click', 'button', function() {
-      $buttonGroup.find('.is-checked').removeClass('is-checked');
-      $(this).addClass('is-checked');
+      filter: filters
     });
   });
 

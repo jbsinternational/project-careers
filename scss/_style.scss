@@ -27,9 +27,17 @@ span {
   }
 }
 
-.logo_container h1 {
+
+
+.logo_container {
+  .logo span{
+    display: none;
+  }
+  h1{
   margin: 0;
+  }
 }
+
 
 .audience,
 .type,
