@@ -245,6 +245,403 @@ ul button {
 /* ==========================================================================
     Media Queries
    ========================================================================== */
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
+  .grid, .resources_container {
+    width: 73.33333%;
+    float: right;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
+  }
+
+  .grid .card {
+    width: 29.58333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
+  }
+
+  header {
+    width: 23.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
+  }
+  header .welcome h1 {
+    font-size: 1.2em;
+  }
+  header .welcome p, header .welcome a {
+    font-size: .8em;
+    line-height: 1.5em;
+  }
+
+  .logo_container {
+    padding: 0 20px;
+  }
+  .logo_container .logo {
+    padding: 0px;
+  }
+
+  .audience,
+  .type,
+  .star {
+    height: 50px;
+  }
+  .audience h3,
+  .type h3,
+  .star h3 {
+    font-size: .85em;
+  }
+  .audience ul button,
+  .type ul button,
+  .star ul button {
+    font-size: .8em;
+    padding: 5px 10px;
+  }
+
+  section.resources_container {
+    padding: 0;
+  }
+  section.resources_container h2 {
+    font-size: 1.1em;
+  }
+  section.resources_container p {
+    font-size: .74em;
+  }
+  section.resources_container .type ul {
+    margin-left: 35px;
+  }
+  section.resources_container .star {
+    padding-bottom: 3px;
+  }
+  section.resources_container .star ul {
+    margin-left: 30px;
+  }
+
+  .grid .card {
+    margin: 20px 0 0 0;
+  }
+  .grid .card img {
+    width: 100%;
+  }
+  .grid .card .card_inner {
+    padding: 10px 7px 0;
+  }
+  .grid .card .card_resource {
+    font-size: 1em;
+  }
+  .grid .card .card_title {
+    font-size: 0.85em;
+  }
+  .grid .card .card_excerpt {
+    font-size: .8em;
+  }
+  .grid .card .card_audience {
+    font-size: .75em;
+  }
+  .grid .card .fa, .grid .card div.card_tag h3 {
+    font-size: .9em;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1224px) {
+  body {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
+  .grid, .resources_container {
+    width: 73.33333%;
+    float: right;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
+  }
+
+  header {
+    width: 23.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
+  }
+
+  .grid .card {
+    width: 29.58333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
+  }
+
+  .welcome h1 {
+    font-size: 1.7em;
+  }
+  .welcome p, .welcome a {
+    font-size: .85em;
+    line-height: 1.5em;
+  }
+
+  section.resources_container {
+    padding: 0;
+  }
+  section.resources_container p {
+    font-size: .8em;
+  }
+  section.resources_container h2 {
+    font-size: 1.1em;
+  }
+
+  .logo_container {
+    padding: 0 20px 16px;
+  }
+  .logo_container .logo {
+    min-width: initial;
+  }
+
+  .audience,
+  .type,
+  .star {
+    height: 53px;
+  }
+  .audience h3,
+  .type h3,
+  .star h3 {
+    font-size: .9em;
+  }
+  .audience ul button,
+  .type ul button,
+  .star ul button {
+    font-size: .8em;
+    padding: 8px 12px;
+  }
+
+  .grid .card {
+    margin: 20px 0 0 0;
+  }
+  .grid .card img {
+    width: 100%;
+  }
+  .grid .card .card_inner {
+    padding: 10px 5% 0;
+  }
+  .grid .card .card_excerpt {
+    font-size: .9em;
+  }
+}
+@media (min-width: 1225px) and (max-width: 1599px) {
+  body {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
+  .grid, .resources_container {
+    width: 73.33333%;
+    float: right;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
+  }
+
+  header {
+    width: 23.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
+  }
+
+  .grid .card {
+    width: 29.58333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
+  }
+
+  .audience,
+  .type,
+  .star {
+    height: 49px;
+  }
+  .audience h3,
+  .type h3,
+  .star h3 {
+    font-weight: 500;
+    font-size: 0.9em;
+  }
+  .audience ul button,
+  .type ul button,
+  .star ul button {
+    padding: 5px 10px !important;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+  }
+  .audience ul button:first-child,
+  .type ul button:first-child,
+  .star ul button:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-left: 1px solid #dcdcdc;
+  }
+  .audience ul button:last-child,
+  .type ul button:last-child,
+  .star ul button:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-right: 1px solid #dcdcdc;
+  }
+
+  .logo_container {
+    padding: 0px 20px 24px;
+  }
+
+  .welcome h1 {
+    font-size: 1.4em;
+  }
+  .welcome p, .welcome a {
+    font-size: .85em;
+    line-height: 1.5em;
+  }
+
+  section.resources_container p {
+    font-size: .9em;
+  }
+
+  .grid .card {
+    margin: 20px 0 0 0;
+  }
+  .grid .card img {
+    width: 100%;
+  }
+  .grid .card .card_inner {
+    padding: 10px 5% 0;
+  }
+  .grid .card .card_excerpt {
+    font-size: .9em;
+  }
+}
+@media (min-width: 1600px) and (max-width: 1999px) {
+  body {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
+  .grid, .resources_container {
+    width: 73.33333%;
+    float: right;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
+  }
+
+  header {
+    width: 23.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
+  }
+
+  .grid .card {
+    width: 29.58333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%;
+  }
+
+  .logo_container {
+    padding: 0 20px 56px;
+  }
+  .logo_container .logo {
+    min-width: initial;
+  }
+
+  .audience,
+  .type,
+  .star {
+    height: 59px;
+  }
+  .audience h3,
+  .type h3,
+  .star h3 {
+    font-weight: 500;
+    font-size: 1em;
+  }
+  .audience ul button,
+  .type ul button,
+  .star ul button {
+    padding: 10px 20px;
+    margin-left: -5px;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+  }
+
+  section.resources_container {
+    padding: 10px 0 5px 0;
+  }
+  section.resources_container h2 {
+    margin: 0;
+    font-size: 1.3em;
+  }
+  section.resources_container p {
+    margin: 0 0 10px;
+    font-size: 1.1em;
+    font-weight: 500;
+  }
+
+  .active {
+    background: #0267a8 !important;
+    color: #fff !important;
+  }
+
+  .welcome {
+    padding: 2% 9% 10%;
+    line-height: 1.75em;
+    font-weight: lighter;
+  }
+  .welcome h1 {
+    font-size: 1.5em;
+    font-weight: lighter;
+    letter-spacing: .5px;
+  }
+  .welcome p, .welcome a {
+    font-size: .85em;
+    line-height: 1.5em;
+  }
+
+  .grid .card {
+    margin: 20px 0 0 0;
+  }
+  .grid .card img {
+    width: 100%;
+  }
+  .grid .card .card_inner {
+    padding: 10px 10px 0;
+  }
+  .grid .card .card_excerpt {
+    font-size: .9em;
+  }
+}
 @media (min-width: 2000px) {
   body {
     max-width: 50%;
@@ -340,16 +737,16 @@ ul button {
     line-height: 1.5em;
   }
 
-  .grid section.card {
+  .grid .card {
     margin: 20px 0 0 0;
   }
-  .grid section.card img {
+  .grid .card img {
     width: 100%;
   }
-  .grid section.card .card_inner {
+  .grid .card .card_inner {
     padding: 10px 10px 0;
   }
-  .grid section.card .card_excerpt {
+  .grid .card .card_excerpt {
     font-size: .9em;
   }
 }
