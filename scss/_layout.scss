@@ -114,6 +114,7 @@ ul button {
    ========================================================================== */
 
 $iphone4: 320px 480px;
+$tablet-small: 480px 767px;
 $ipad: 768px 1023px;
 $browser-small:1024px 1224px;
 $browser-medium:1225px 1599px;
@@ -170,7 +171,6 @@ $browser-xLarge:2000px;
   }
 
   .logo_container {
-    background-color: #fff;
     padding: 10px 0 20px 0;
     .logo{
       min-height: 113px;
@@ -217,6 +217,15 @@ $browser-xLarge:2000px;
   }
 }
 
+@include breakpoint($tablet-small) {
+  .logo_container {
+    padding: 10px 20px 20px;
+    h1.logo {
+      min-height: 113px;
+    }
+  }
+}
+
 @include breakpoint($ipad) {
   body{
     @include container(95%);
@@ -243,8 +252,9 @@ $browser-xLarge:2000px;
 
   .logo_container {
     margin-bottom: 20px;
-    padding: 0 20px;
+    padding: 0 10px 3px;
     .logo{
+      min-height: 217px;
       padding: 0px;
     }
   }
@@ -355,9 +365,9 @@ $browser-xLarge:2000px;
 
   .logo_container {
     margin-bottom: 20px;
-    padding: 0 20px 16px;
+        padding: 50px 10px 60px;
     .logo{
-      min-width: initial;
+      min-height: 126px;
     }
   }
 
