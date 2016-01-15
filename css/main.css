@@ -427,7 +427,6 @@ ul button {
   .audience ul button,
   .type ul button,
   .star ul button {
-    font-size: .8em;
     padding: 5px 10px;
   }
 
@@ -442,7 +441,7 @@ ul button {
     padding: 10px;
   }
   section.resources_container h2 {
-    font-size: 1.1em;
+    font-size: .8em;
   }
   section.resources_container p {
     font-size: .74em;
