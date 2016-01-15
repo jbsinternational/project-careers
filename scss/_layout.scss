@@ -87,6 +87,11 @@ ul button {
   }
 }
 
+.about {
+  background: rgba(255,255,255,.6);
+  padding: 1px 20px 20px 20px;
+}
+
 /* ==========================================================================
     Media Queries
    ========================================================================== */
@@ -190,6 +195,9 @@ $browser-xLarge:2000px;
       font-size: .9em;
     }
   }
+  .about {
+    margin: 30px auto 30px auto;
+  }
 }
 
 @include breakpoint($browser-small) {
@@ -278,7 +286,9 @@ $browser-xLarge:2000px;
 
     }
   }
-
+  .about {
+    margin: 50px auto 50px auto;
+  }
 }
 
 
@@ -354,6 +364,9 @@ $browser-xLarge:2000px;
     .card_excerpt{
       font-size: .9em;
     }
+  }
+  .about {
+    margin: 50px auto 50px auto;
   }
 }
 
@@ -442,6 +455,9 @@ $browser-xLarge:2000px;
       font-size: .9em;
     }
   }
+  .about {
+    margin: 50px auto 50px auto;
+  }
 }
 
 @include breakpoint($browser-xLarge) {
@@ -527,5 +543,8 @@ $browser-xLarge:2000px;
     .card_excerpt{
       font-size: .9em;
     }
+  }
+  .about {
+    margin: 50px auto 50px auto;
   }
 }

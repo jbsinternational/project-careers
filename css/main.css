@@ -257,6 +257,11 @@ ul button {
   padding: 10px;
 }
 
+.about {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 1px 20px 20px 20px;
+}
+
 /* ==========================================================================
     Media Queries
    ========================================================================== */
@@ -378,6 +383,10 @@ ul button {
   .grid .card .fa, .grid .card div.card_tag h3 {
     font-size: .9em;
   }
+
+  .about {
+    margin: 30px auto 30px auto;
+  }
 }
 @media (min-width: 1024px) and (max-width: 1224px) {
   body {
@@ -473,6 +482,10 @@ ul button {
   }
   .grid .card .card_excerpt {
     font-size: .9em;
+  }
+
+  .about {
+    margin: 50px auto 50px auto;
   }
 }
 @media (min-width: 1225px) and (max-width: 1599px) {
@@ -576,6 +589,10 @@ ul button {
   }
   .grid .card .card_excerpt {
     font-size: .9em;
+  }
+
+  .about {
+    margin: 50px auto 50px auto;
   }
 }
 @media (min-width: 1600px) and (max-width: 1999px) {
@@ -688,6 +705,10 @@ ul button {
   .grid .card .card_excerpt {
     font-size: .9em;
   }
+
+  .about {
+    margin: 50px auto 50px auto;
+  }
 }
 @media (min-width: 2000px) {
   body {
@@ -797,6 +818,10 @@ ul button {
   }
   .grid .card .card_excerpt {
     font-size: .9em;
+  }
+
+  .about {
+    margin: 50px auto 50px auto;
   }
 }
 html {
