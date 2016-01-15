@@ -38,7 +38,7 @@ ul button {
 .type,
 .star {
   height: 50px;
-  h3{
+  h2{
     display: inline-block;
     font-size: .75em;
   }
@@ -147,7 +147,7 @@ $browser-xLarge:2000px;
   .star {
     height: 50px;
     margin-bottom: 5px;
-    h3{
+    h2{
       margin: 10px 500px 0 auto;
       display: inline-block;
       font-size: .9em;
@@ -235,7 +235,7 @@ $browser-xLarge:2000px;
   .type,
   .star {
     height: 50px;
-    h3{
+    h2{
       font-size: .8em;
     }
     ul button{
@@ -349,7 +349,7 @@ $browser-xLarge:2000px;
   .type,
   .star {
     height: 53px;
-    h3{
+    h2{
       font-size: .9em;
     }
     ul button{
@@ -365,27 +365,14 @@ $browser-xLarge:2000px;
     .card_inner{
     padding: 10px 5% 0;
     }
-    .card_resource{
-
-    }
-    .card_title{
-
-    }
     .card_excerpt{
       font-size: .9em;
     }
     .card_audience {
-
-    }
-    h3 {
-
-    }
-    .fa, div.card_tag h3{
-
-    }
   }
-  .about {
-    margin: 50px auto 50px auto;
+    .about {
+      margin: 50px;
+    }
   }
 }
 
@@ -407,7 +394,7 @@ $browser-xLarge:2000px;
   .type,
   .star {
     height: 49px;
-    h3 {
+    h2 {
       font-weight: 500;
       font-size: 0.9em;
     }
@@ -464,7 +451,7 @@ $browser-xLarge:2000px;
     }
   }
   .about {
-    margin: 50px auto 50px auto;
+    margin: 50px auto;
   }
 }
 
@@ -492,7 +479,7 @@ $browser-xLarge:2000px;
   .type,
   .star {
     height: 59px;
-    h3 {
+    h2 {
       font-weight: 500;
       font-size: 1em;
     }
@@ -554,7 +541,7 @@ $browser-xLarge:2000px;
     }
   }
   .about {
-    margin: 50px auto 50px auto;
+    margin: 50px;
   }
 }
 
@@ -583,7 +570,7 @@ $browser-xLarge:2000px;
   .type,
   .star {
     height: 65px;
-    h3 {
+    h2 {
       font-weight: 500;
       font-size: 1em;
     }
@@ -643,6 +630,6 @@ $browser-xLarge:2000px;
     }
   }
   .about {
-    margin: 50px auto 50px auto;
+    margin: 50px auto;
   }
 }

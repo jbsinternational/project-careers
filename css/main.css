@@ -205,9 +205,9 @@ ul button {
 .star {
   height: 50px;
 }
-.audience h3,
-.type h3,
-.star h3 {
+.audience h2,
+.type h2,
+.star h2 {
   display: inline-block;
   font-size: .75em;
 }
@@ -307,9 +307,9 @@ ul button {
     height: 50px;
     margin-bottom: 5px;
   }
-  .audience h3,
-  .type h3,
-  .star h3 {
+  .audience h2,
+  .type h2,
+  .star h2 {
     margin: 10px 500px 0 auto;
     display: inline-block;
     font-size: .9em;
@@ -419,9 +419,9 @@ ul button {
   .star {
     height: 50px;
   }
-  .audience h3,
-  .type h3,
-  .star h3 {
+  .audience h2,
+  .type h2,
+  .star h2 {
     font-size: .8em;
   }
   .audience ul button,
@@ -557,9 +557,9 @@ ul button {
   .star {
     height: 53px;
   }
-  .audience h3,
-  .type h3,
-  .star h3 {
+  .audience h2,
+  .type h2,
+  .star h2 {
     font-size: .9em;
   }
   .audience ul button,
@@ -581,9 +581,8 @@ ul button {
   .grid .card .card_excerpt {
     font-size: .9em;
   }
-
-  .about {
-    margin: 50px auto 50px auto;
+  .grid .card .about {
+    margin: 50px;
   }
 }
 @media (min-width: 1225px) and (max-width: 1599px) {
@@ -624,9 +623,9 @@ ul button {
   .star {
     height: 49px;
   }
-  .audience h3,
-  .type h3,
-  .star h3 {
+  .audience h2,
+  .type h2,
+  .star h2 {
     font-weight: 500;
     font-size: 0.9em;
   }
@@ -690,7 +689,7 @@ ul button {
   }
 
   .about {
-    margin: 50px auto 50px auto;
+    margin: 50px auto;
   }
 }
 @media (min-width: 1600px) and (max-width: 1999px) {
@@ -739,9 +738,9 @@ ul button {
   .star {
     height: 59px;
   }
-  .audience h3,
-  .type h3,
-  .star h3 {
+  .audience h2,
+  .type h2,
+  .star h2 {
     font-weight: 500;
     font-size: 1em;
   }
@@ -805,7 +804,7 @@ ul button {
   }
 
   .about {
-    margin: 50px auto 50px auto;
+    margin: 50px;
   }
 }
 @media (min-width: 2000px) {
@@ -854,9 +853,9 @@ ul button {
   .star {
     height: 65px;
   }
-  .audience h3,
-  .type h3,
-  .star h3 {
+  .audience h2,
+  .type h2,
+  .star h2 {
     font-weight: 500;
     font-size: 1em;
   }
@@ -919,7 +918,7 @@ ul button {
   }
 
   .about {
-    margin: 50px auto 50px auto;
+    margin: 50px auto;
   }
 }
 html {
@@ -954,7 +953,7 @@ span i {
   text-decoration: underline;
 }
 
-.logo_container .logo span {
+.logo_container .logo div {
   display: none;
 }
 .logo_container h1 {
@@ -1033,6 +1032,8 @@ span i {
   background: #fff;
 }
 .card .card_resource {
+  display: block;
+  border-bottom: 1px dotted #b5b5b5;
   color: #cc450b;
   margin: 0;
   font-weight: 300;
@@ -1043,12 +1044,23 @@ span i {
   font-size: 1em;
   margin: 0;
 }
+.card .card_title a {
+  text-decoration: none;
+  color: inherit;
+}
 .card .card_exceprt {
   font-size: .8em;
 }
 .card .card_audience {
   font-weight: 800;
   font-size: .8em;
+}
+.card .card_tag {
+  display: block;
+  border-top: 1px dotted #b5b5b5;
+}
+.card .card_resource {
+  margin-bottom: 10px;
 }
 .card h3 {
   display: inline-block;

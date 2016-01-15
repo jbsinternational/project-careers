@@ -44,7 +44,7 @@ span {
 
 
 .logo_container {
-  .logo span{
+  .logo div{
     display: none;
   }
   h1{
@@ -120,6 +120,8 @@ span {
   margin-left: 0px;
   background: #fff;
   .card_resource{
+    display: block;
+    border-bottom: 1px dotted #b5b5b5;
     color: $orange;
     margin: 0;
     font-weight: 300;
@@ -129,6 +131,10 @@ span {
     color: $blue;
     font-size: 1em;
     margin: 0;
+    a{
+      text-decoration: none;
+      color: inherit;
+    }
   }
   .card_exceprt {
     font-size: .8em;
@@ -136,6 +142,13 @@ span {
   .card_audience {
     font-weight: 800;
     font-size: .8em;
+  }
+  .card_tag{
+    display: block;
+    border-top: 1px dotted #b5b5b5;
+  }
+  .card_resource{
+    margin-bottom: 10px;
   }
   h3{
     display: inline-block;
