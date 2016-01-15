@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500);
 
 $orange: #cc450b;
-$blue: #fff;
+$blue: #0267a8;
 
 html{
   font-family: 'Roboto', sans-serif;
@@ -16,10 +16,24 @@ body {
   background-color: #fff;
 }
 
+// Focus Accessibility Block | Begin
+a, button {
+   &:focus {
+     outline: 2px dotted $blue;
+   }
+ }
+
+ .no-focus {
+   a, button {
+      outline: none;
+   }
+ }
+
 .font-smoothing {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+// Focus Accessibility Block | End
 
 span {
   display: block;
@@ -80,7 +94,7 @@ span {
 }
 
 .is-checked {
-  background: #0267a8 !important;
+  background: $blue !important;
   color: #fff !important;
 }
 
@@ -112,7 +126,7 @@ span {
     font-size: 1em;
   }
   .card_title{
-    color: #0267a8;
+    color: $blue;
     font-size: 1em;
     margin: 0;
   }

@@ -11,45 +11,63 @@
   // store filter for each group
   var filters = {};
 
-  var data = {
-    audience: 'students veterans educators serviceProviders employers',
-    type: 'apps information videos podcasts vulputate fringilla',
-    colors: 'apps information videos podcasts',
-    sizes: 'student technology accomodations resources'
-  };
-
   $('.filters').on('click', '.button', function() {
-    console.log('button clicked');
     var filters = '';
     var selected = $(this).data('selected');
     var group = $(this).data('group');
     var currentFilter = $(this).data('filter');
-    console.log('current filter ' + selected);
+
     if(selected == "0") {
-      console.log('filter found');
       filters = $(this).data('filter');
       $(this).data('selected', "1");
       $(this).addClass('is-checked')
     }
     else {
-      console.log('filter unchecked');
       $(this).data('selected', "0");
       $(this).removeClass('is-checked')
     }
-    console.log('filters ' + filters);
 
     // set filter for Isotope
     $grid.isotope({
       filter: filters
     });
+
+    // flatten object by concatting values
+    function concatValues(obj) {
+      var value = '';
+      for (var prop in obj) {
+        value += obj[prop];
+      }
+      return value;
+    }
+  });
+}());
+
+// Focus Outline Acessibility JS
+(function(doc) {
+  var dom_events = 'addEventListener' in doc,
+    e = doc.getElementsByTagName("body")[0],
+    _add_event_listener = function(type, callback) {
+      // Basic cross-browser event handling
+      if (dom_events) {
+        doc.addEventListener(type, callback);
+      } else {
+        doc.attachEvent('on' + type, callback);
+      }
+    },
+    _set_class = function(add) {
+      if (add && ! e.classList.contains('no-focus')) {
+        e.classList.add('no-focus');
+      } else if (!add)    {
+        e.classList.remove('no-focus');
+      }
+    };
+
+  _add_event_listener('mousedown', function() {
+    _set_class(true);
   });
 
-  // flatten object by concatting values
-  function concatValues(obj) {
-    var value = '';
-    for (var prop in obj) {
-      value += obj[prop];
-    }
-    return value;
-  }
-}());
+  _add_event_listener('keydown', function() {
+    _set_class(false);
+  });
+})(document);

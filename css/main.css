@@ -934,6 +934,14 @@ body {
   background-color: #fff;
 }
 
+a:focus, button:focus {
+  outline: 2px dotted #0267a8;
+}
+
+.no-focus a, .no-focus button {
+  outline: none;
+}
+
 .font-smoothing {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
