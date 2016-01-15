@@ -167,7 +167,7 @@ ul button {
 
   .logo_container {
     background-color: #fff;
-    padding: 20px 20px 35px;
+    padding: 10px 0 20px 0;
   }
   .logo_container .logo {
     min-height: 113px;
@@ -190,6 +190,10 @@ ul button {
 
   .about_header {
     margin-top: 0;
+  }
+  .about_header .logo {
+    margin: 0;
+    padding: 10px 0 20px 0;
   }
   .about_header img {
     max-height: 113px;

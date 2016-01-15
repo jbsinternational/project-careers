@@ -171,7 +171,7 @@ $browser-xLarge:2000px;
 
   .logo_container {
     background-color: #fff;
-    padding: 20px 20px 35px;
+    padding: 10px 0 20px 0;
     .logo{
       min-height: 113px;
       background-image:url("../img/ProjectCareerLogo.png");
@@ -196,6 +196,10 @@ $browser-xLarge:2000px;
 
   .about_header {
     margin-top: 0;
+    .logo{
+      margin: 0;
+      padding: 10px 0 20px 0;
+    }
     img {
       max-height: 113px;
     }
