@@ -263,6 +263,7 @@ ul button {
 }
 
 .about_header {
+  margin-top: 0;
   width: 90%;
 }
 .about_header .logo {
@@ -359,6 +360,7 @@ ul button {
   }
 
   .about_header {
+    margin-top: 0;
     width: 80%;
   }
 }
