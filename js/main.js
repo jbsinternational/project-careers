@@ -2,7 +2,10 @@
   // init Isotope
   var $grid = $('.grid').isotope({
     itemSelector: '.element-item',
-    layoutMode: 'fitRows'
+    layoutMode: 'fitRows',
+      fitRows: {
+        gutter: 20
+      }
   });
 
   // store filter for each group
