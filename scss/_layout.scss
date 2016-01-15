@@ -4,18 +4,15 @@
 // settings
 // --------
 
-$gutter-width   : 1em;
-$grid-padding   : $gutter-width;
-
 $susy: (
   columns: 10,
   gutters: 2/10,
   gutter-position: split,
 );
 
-footer {
-  @include bleed($grid-padding);
-}
+
+// Mobile First Y'all
+// ------------------
 body {
   @include container(100%);
 }
