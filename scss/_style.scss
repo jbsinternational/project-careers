@@ -21,7 +21,7 @@ span {
   }
 }
 
-header, aside {
+.resources_container, header, .welcome_container {
   margin-top: 50px;
 }
 
@@ -58,7 +58,7 @@ body {
 }
 
 
-.filter-resources {
+.resources_container {
   background: #fff;
   h2 {
     margin: 0;
@@ -126,8 +126,3 @@ body {
     font-size: .95em;
   }
 }
-
-// Sloppy Hotfix
-// section.card.element-item.students.employers.resources {
-//     margin-left: 0;
-// }
