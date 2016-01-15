@@ -899,6 +899,12 @@ span i {
   text-decoration: none;
   color: inherit;
 }
+.card .card_title a:hover {
+  text-decoration: underline;
+}
+.card .card_title a:active {
+  text-decoration: underline;
+}
 .card .card_exceprt {
   font-size: .8em;
 }
