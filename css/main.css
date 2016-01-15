@@ -288,7 +288,9 @@ ul button {
     padding: 10px;
   }
   .resources_container .filter-resources p {
-    font-size: .9em;
+    font-size: .85em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
   .resources_container .filter-resources .star {
     padding-bottom: 0px;
@@ -308,21 +310,23 @@ ul button {
   .audience h3,
   .type h3,
   .star h3 {
-    margin: auto 500px 0 auto;
+    margin: 10px 500px 0 auto;
     display: inline-block;
     font-size: .9em;
   }
   .audience button,
   .type button,
   .star button {
-    font-size: .7em;
+    font-size: .85em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
   .audience ul,
   .type ul,
   .star ul {
     display: inline-block;
-    padding: 0 0 0 20px;
-    margin: 0;
+    padding: 0;
+    margin: 5px 0 0 3px;
     font-size: .9em;
   }
 

@@ -127,7 +127,9 @@ $browser-xLarge:2000px;
     .filter-resources{
       padding: 10px;
       p{
-        font-size: .9em;
+        font-size: .85em;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
       }
       .star{
         padding-bottom: 0px;
@@ -146,17 +148,19 @@ $browser-xLarge:2000px;
     height: 50px;
     margin-bottom: 5px;
     h3{
-      margin: auto 500px 0 auto;
+      margin: 10px 500px 0 auto;
       display: inline-block;
       font-size: .9em;
     }
     button{
       font-size: .85em;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
       ul{
         display: inline-block;
-        padding: 0 0 0 20px;
-        margin: 0;
+        padding: 0;
+        margin: 5px 0 0 3px;
         font-size: .9em;
       }
   }
