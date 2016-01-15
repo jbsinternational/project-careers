@@ -272,14 +272,14 @@ ul button {
   }
 
   main .card {
-    width: 33.33333%;
+    width: 29.58333%;
     float: left;
     margin-left: 0.83333%;
     margin-right: 0.83333%;
   }
 
   .logo_container {
-    padding: 0 20px 56px;
+    padding: 20px 20px 56px;
   }
   .logo_container .logo {
     min-width: initial;
@@ -359,6 +359,11 @@ html {
   background-repeat: no-repeat;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+}
+
 button:focus {
   outline: 0;
 }
@@ -375,13 +380,12 @@ span i {
   text-decoration: underline;
 }
 
-.resources_container, header, .welcome_container {
+.resources_container, header {
   margin-top: 50px;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: lighter;
+.logo_container h1 {
+  margin: 0;
 }
 
 .audience ul button,

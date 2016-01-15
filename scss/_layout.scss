@@ -444,11 +444,11 @@ $browser-xLarge:2000px;
     @include span(2.5 at 1);
   }
   main .card {
-    @include span(3.5 at 3.5);
+    @include span(3.125 at 3.5);
   }
 
   .logo_container {
-    padding: 0 20px 56px;
+    padding: 20px 20px 56px;
     .logo{
       min-width: initial;
     }

@@ -7,6 +7,11 @@ html{
   background-repeat: no-repeat;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+}
+
 button:focus { outline:0; }
 
 .font-smoothing {
@@ -21,13 +26,12 @@ span {
   }
 }
 
-.resources_container, header, .welcome_container {
+.resources_container, header {
   margin-top: 50px;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: lighter;
+.logo_container h1 {
+  margin: 0;
 }
 
 .audience,
