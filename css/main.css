@@ -935,7 +935,7 @@ body {
 }
 
 button:focus {
-  outline: 0;
+  outline: 1px;
 }
 
 .font-smoothing {
@@ -1007,7 +1007,7 @@ span i {
 }
 
 .welcome {
-  background: #db581f;
+  background: #cc450b;
   color: #fff;
   font-weight: lighter;
   line-height: 1.75em;
@@ -1029,7 +1029,7 @@ span i {
   background: #fff;
 }
 .card .card_resource {
-  color: #db581f;
+  color: #cc450b;
   margin: 0;
   font-weight: 300;
   font-size: 1em;
