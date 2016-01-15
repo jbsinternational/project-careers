@@ -1,4 +1,11 @@
 @import "breakpoint";
+@include establish-baseline;
+
+// settings
+// --------
+
+$gutter-width   : 1em;
+$grid-padding   : $gutter-width;
 
 $susy: (
   columns: 10,
@@ -6,10 +13,12 @@ $susy: (
   gutter-position: split,
 );
 
+footer {
+  @include bleed($grid-padding);
+}
 body {
   @include container(100%);
 }
-
 
 .grid:after {
   content: '';
@@ -104,13 +113,10 @@ ul button {
 }
 
 /* ==========================================================================
-    Media Queries
+    Media Query Dynasty
    ========================================================================== */
 
-$hidpi: min-resolution 1.5dppx;
-
 $iphone4: 320px 480px;
-
 $ipad: 768px 1023px;
 $browser-small:1024px 1224px;
 $browser-medium:1225px 1599px;

@@ -1,172 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500);
 html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
+  font-size: 100%;
+  line-height: 1.5em;
 }
 
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
+footer {
+  margin: -1em;
+  padding: 1em;
 }
 
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px dotted #b5b5b5;
-  margin: 0;
-  padding: 0;
-}
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-textarea {
-  resize: vertical;
-}
-
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-.hidden {
-  display: none !important;
-}
-
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
-}
-
-.invisible {
-  visibility: hidden;
-}
-
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
-
-.clearfix:after {
-  clear: both;
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   http://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-@media print {
-  *,
-  *:before,
-  *:after {
-    background: transparent !important;
-    color: #000 !important;
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: "";
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  /*
-   * Printing Tables:
-   * http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
-  thead {
-    display: table-header-group;
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  img {
-    max-width: 100% !important;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-}
 body {
   max-width: 100%;
   margin-left: auto;
@@ -274,7 +116,7 @@ ul button {
 }
 
 /* ==========================================================================
-    Media Queries
+    Media Query Dynasty
    ========================================================================== */
 @media (min-width: 320px) and (max-width: 480px) {
   .resources_container {
@@ -920,6 +762,15 @@ ul button {
     margin: 50px auto;
   }
 }
+html, body, .wrapper {
+  height: 100%;
+}
+
+body > .wrapper {
+  height: auto;
+  min-height: 100%;
+}
+
 html {
   font-family: 'Roboto', sans-serif;
   font-weight: lighter;
@@ -1068,4 +919,15 @@ span i {
 .card .fa, .card div.card_tag h3 {
   color: #35792a;
   font-size: .95em;
+}
+
+footer {
+  background: rgba(255, 255, 255, 0.7);
+  color: #000;
+  font-weight: bolder;
+  clear: both;
+  position: relative;
+  z-index: 10;
+  height: 3em;
+  margin-top: -3em;
 }

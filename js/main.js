@@ -43,7 +43,9 @@
   });
 }());
 
+
 // Focus Outline Acessibility JS
+// -----------------------------
 (function(doc) {
   var dom_events = 'addEventListener' in doc,
     e = doc.getElementsByTagName("body")[0],

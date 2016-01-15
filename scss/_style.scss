@@ -1,7 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500);
 
+// variables
+// ---------
 $orange: #cc450b;
 $blue: #0267a8;
+
+
+// http://www.lwis.net/journal/2008/02/08/pure-css-sticky-footer/
+// --------------------------------------------------------------
+html, body, .wrapper { height: 100%; }
+body > .wrapper { height: auto; min-height: 100%; }
 
 html{
   font-family: 'Roboto', sans-serif;
@@ -10,13 +18,13 @@ html{
 
 body {
   background-image: url("../img/background.png");
-  // background-repeat:no-repeat; // re-enable once background image issue is figured out
   background-size:cover;
   background-repeat: no-repeat;
   background-color: #fff;
 }
 
 // Focus Accessibility Block | Begin
+// ---------------------------------
 a, button {
    &:focus {
      outline: 2px dotted $blue;
@@ -34,6 +42,7 @@ a, button {
     -moz-osx-font-smoothing: grayscale;
 }
 // Focus Accessibility Block | End
+// -------------------------------
 
 span {
   display: block;
@@ -158,4 +167,15 @@ span {
     color: #35792a;
     font-size: .95em;
   }
+}
+
+footer {
+  background: rgba(255,255,255,.7);
+  color: #000;
+  font-weight: bolder;
+  clear: both;
+  position: relative;
+  z-index: 10;
+  height: 3em;
+  margin-top: -3em;
 }
