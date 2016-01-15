@@ -743,10 +743,6 @@ ul button {
   main section.card .card_inner {
     padding: 10px 10px 0;
   }
-  main section.card:nth-of-type(2), main section.card:nth-of-type(3) {
-    margin-left: 10px;
-    margin-right: 0px;
-  }
   main section.card .card_excerpt {
     font-size: .9em;
   }
