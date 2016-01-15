@@ -9,6 +9,9 @@ $susy: (
   gutter-position: split,
 );
 
+footer {
+  @include bleed(1em);
+}
 
 // Mobile First Y'all
 // ------------------
@@ -570,7 +573,7 @@ $browser-xLarge:2000px;
   .audience,
   .type,
   .star {
-    height: 65px;
+    height: 67px;
     h2 {
       font-weight: 500;
       font-size: 1em;
