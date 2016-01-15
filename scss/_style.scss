@@ -1,15 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500);
 
 html{
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+}
+
+body {
   background-image: url("../img/background.png");
   // background-repeat:no-repeat; // re-enable once background image issue is figured out
   background-size:cover;
   background-repeat: no-repeat;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: lighter;
+  background-color: #fff;
 }
 
 button:focus { outline:0; }
@@ -24,10 +25,6 @@ span {
   i {
     text-decoration: underline;
   }
-}
-
-.resources_container, header {
-  margin-top: 50px;
 }
 
 .logo_container h1 {
@@ -85,7 +82,7 @@ span {
   color: #fff;
   font-weight: lighter;
   line-height: 1.75em;
-  padding: 2% 9% 10%;
+  padding: 2% 5% 10%;
   h1{
     font-size: 1.5em;
     font-weight: lighter;

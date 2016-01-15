@@ -168,10 +168,9 @@ textarea {
   }
 }
 body {
-  max-width: 69%;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
 }
 body:after {
   content: " ";
@@ -188,6 +187,10 @@ body:after {
 .resources_container {
   padding: 10px 0;
 }
+.resources_container h1 {
+  margin: 0;
+  font-size: 1em;
+}
 .resources_container .filter-resources {
   padding: 10px 20px;
 }
@@ -200,12 +203,18 @@ ul button {
 .audience,
 .type,
 .star {
-  height: 65px;
+  height: 50px;
 }
 .audience h3,
 .type h3,
 .star h3 {
   display: inline-block;
+  font-size: .75em;
+}
+.audience button,
+.type button,
+.star button {
+  font-size: .7em;
 }
 .audience ul,
 .type ul,
@@ -216,7 +225,6 @@ ul button {
 
 .logo_container {
   background-color: #fff;
-  margin-bottom: 20px;
   padding: 30px 20px 56px;
 }
 .logo_container .logo {
@@ -240,6 +248,13 @@ ul button {
 
 .audience ul {
   margin-left: 8px;
+}
+
+.card img {
+  width: 100%;
+}
+.card .card_inner {
+  padding: 10px;
 }
 
 /* ==========================================================================
@@ -277,6 +292,9 @@ ul button {
     margin-left: 0.83333%;
     margin-right: 0.83333%;
   }
+  header .welcome {
+    padding: 2% 10% 10%;
+  }
   header .welcome h1 {
     font-size: 1.2em;
   }
@@ -286,6 +304,7 @@ ul button {
   }
 
   .logo_container {
+    margin-bottom: 20px;
     padding: 0 20px;
   }
   .logo_container .logo {
@@ -300,7 +319,7 @@ ul button {
   .audience h3,
   .type h3,
   .star h3 {
-    font-size: .85em;
+    font-size: .8em;
   }
   .audience ul button,
   .type ul button,
@@ -309,8 +328,15 @@ ul button {
     padding: 5px 10px;
   }
 
+  .resources_container, header {
+    margin-top: 50px;
+  }
+
   section.resources_container {
     padding: 0;
+  }
+  section.resources_container .filter-resources {
+    padding: 10px;
   }
   section.resources_container h2 {
     font-size: 1.1em;
@@ -386,12 +412,19 @@ ul button {
     margin-right: 0.83333%;
   }
 
+  .welcome {
+    padding: 2% 10% 10%;
+  }
   .welcome h1 {
     font-size: 1.7em;
   }
   .welcome p, .welcome a {
     font-size: .85em;
     line-height: 1.5em;
+  }
+
+  .resources_container, header {
+    margin-top: 50px;
   }
 
   section.resources_container {
@@ -405,6 +438,7 @@ ul button {
   }
 
   .logo_container {
+    margin-bottom: 20px;
     padding: 0 20px 16px;
   }
   .logo_container .logo {
@@ -508,15 +542,23 @@ ul button {
   }
 
   .logo_container {
+    margin-bottom: 20px;
     padding: 0px 20px 24px;
   }
 
+  .welcome {
+    padding: 2% 10% 10%;
+  }
   .welcome h1 {
     font-size: 1.4em;
   }
   .welcome p, .welcome a {
     font-size: .85em;
     line-height: 1.5em;
+  }
+
+  .resources_container, header {
+    margin-top: 50px;
   }
 
   section.resources_container p {
@@ -570,6 +612,7 @@ ul button {
   }
 
   .logo_container {
+    margin-bottom: 20px;
     padding: 0 20px 56px;
   }
   .logo_container .logo {
@@ -596,6 +639,10 @@ ul button {
     letter-spacing: 0.5px;
   }
 
+  .resources_container, header {
+    margin-top: 50px;
+  }
+
   section.resources_container {
     padding: 10px 0 5px 0;
   }
@@ -615,7 +662,7 @@ ul button {
   }
 
   .welcome {
-    padding: 2% 9% 10%;
+    padding: 2% 10% 10%;
     line-height: 1.75em;
     font-weight: lighter;
   }
@@ -676,6 +723,7 @@ ul button {
   }
 
   .logo_container {
+    margin-bottom: 20px;
     padding: 20px 20px 56px;
   }
   .logo_container .logo {
@@ -702,6 +750,10 @@ ul button {
     letter-spacing: 0.5px;
   }
 
+  .resources_container, header {
+    margin-top: 50px;
+  }
+
   .resources_container {
     background: #fff;
   }
@@ -721,11 +773,8 @@ ul button {
   }
 
   .welcome {
-    background: #db581f;
-    color: #fff;
-    padding: 2% 9% 10%;
+    padding: 2% 10% 10%;
     line-height: 1.75em;
-    font-weight: lighter;
   }
   .welcome h1 {
     font-size: 1.5em;
@@ -751,14 +800,15 @@ ul button {
   }
 }
 html {
-  background-image: url("../img/background.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: lighter;
+  background-image: url("../img/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #fff;
 }
 
 button:focus {
@@ -775,10 +825,6 @@ span {
 }
 span i {
   text-decoration: underline;
-}
-
-.resources_container, header {
-  margin-top: 50px;
 }
 
 .logo_container h1 {
@@ -839,7 +885,7 @@ span i {
   color: #fff;
   font-weight: lighter;
   line-height: 1.75em;
-  padding: 2% 9% 10%;
+  padding: 2% 5% 10%;
 }
 .welcome h1 {
   font-size: 1.5em;
