@@ -4,7 +4,7 @@
     itemSelector: '.element-item',
     layoutMode: 'fitRows',
       fitRows: {
-        gutter: 50
+        gutter: 25
       }
   });
 
