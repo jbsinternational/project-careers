@@ -953,7 +953,7 @@ span i {
   text-decoration: underline;
 }
 
-.logo_container .logo div {
+.logo_container .logo span {
   display: none;
 }
 .logo_container h1 {
