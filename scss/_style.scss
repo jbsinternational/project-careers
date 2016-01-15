@@ -164,14 +164,20 @@ span {
     display: inline-block;
     margin-left: 5px;
   }
-  .fa, div.card_tag h3 {
+  .fa, div.card_tag p {
     color: #35792a;
     font-size: .95em;
+    display: inline-block;
+    margin-left: 5px;
   }
 }
 
 .grid{
   margin-bottom: 30px;
+}
+
+.about_header {
+  width: 100%;
 }
 
 footer {

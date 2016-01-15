@@ -102,12 +102,10 @@ ul button {
 
 .about_header {
   margin-top: 0;
-  width: 90%;
-  .logo{
-    max-width: 113px;
+  .logo img{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+
   }
 }
 
@@ -158,6 +156,7 @@ $browser-xLarge:2000px;
       font-size: .9em;
     }
     button{
+      padding: 5px;
       font-size: .85em;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
@@ -172,7 +171,7 @@ $browser-xLarge:2000px;
 
   .logo_container {
     background-color: #fff;
-    padding: 30px 20px 56px;
+    padding: 20px 20px 35px;
     .logo{
       min-height: 113px;
       background-image:url("../img/ProjectCareerLogo.png");
@@ -195,13 +194,22 @@ $browser-xLarge:2000px;
     }
   }
 
+  .about_header {
+    margin-top: 0;
+    img {
+      max-height: 113px;
+    }
+  }
+
   .about {
     background: rgba(255,255,255,.6);
     padding: 1px 20px 20px 20px;
-  }
-  .about_header {
-    margin-top: 0;
-    width: 80%;
+    h1{
+      font-size: 2em;
+    }
+    p, li {
+      font-size: .9em;
+    }
   }
 }
 
@@ -293,7 +301,7 @@ $browser-xLarge:2000px;
     .card_audience {
       font-size: .75em;
     }
-    .fa, div.card_tag h3{
+    .fa, div.card_tag p{
       font-size: .9em;
     }
   }

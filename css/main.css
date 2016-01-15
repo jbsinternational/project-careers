@@ -101,13 +101,10 @@ ul button {
 
 .about_header {
   margin-top: 0;
-  width: 90%;
 }
-.about_header .logo {
-  max-width: 113px;
+.about_header .logo img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
 
 /* ==========================================================================
@@ -154,6 +151,7 @@ ul button {
   .audience button,
   .type button,
   .star button {
+    padding: 5px;
     font-size: .85em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -169,7 +167,7 @@ ul button {
 
   .logo_container {
     background-color: #fff;
-    padding: 30px 20px 56px;
+    padding: 20px 20px 35px;
   }
   .logo_container .logo {
     min-height: 113px;
@@ -190,14 +188,22 @@ ul button {
     padding: 10px;
   }
 
+  .about_header {
+    margin-top: 0;
+  }
+  .about_header img {
+    max-height: 113px;
+  }
+
   .about {
     background: rgba(255, 255, 255, 0.6);
     padding: 1px 20px 20px 20px;
   }
-
-  .about_header {
-    margin-top: 0;
-    width: 80%;
+  .about h1 {
+    font-size: 2em;
+  }
+  .about p, .about li {
+    font-size: .9em;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -314,7 +320,7 @@ ul button {
   .grid .card .card_audience {
     font-size: .75em;
   }
-  .grid .card .fa, .grid .card div.card_tag h3 {
+  .grid .card .fa, .grid .card div.card_tag p {
     font-size: .9em;
   }
 
@@ -911,13 +917,19 @@ span i {
   display: inline-block;
   margin-left: 5px;
 }
-.card .fa, .card div.card_tag h3 {
+.card .fa, .card div.card_tag p {
   color: #35792a;
   font-size: .95em;
+  display: inline-block;
+  margin-left: 5px;
 }
 
 .grid {
   margin-bottom: 30px;
+}
+
+.about_header {
+  width: 100%;
 }
 
 footer {
