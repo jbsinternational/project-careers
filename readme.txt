@@ -63,6 +63,7 @@ http://susy.oddbird.net/
 http://breakpoint-sass.com/
 
 This was my first time using both of these as light-weight solutions for static sites ( I usually just use the 1% CSS Grid and hand-code media queries ) and I gotta say, both of these tools are awesome. Definitely look into these if you need to build static sites in the future, especially breakpoint.
+https://www.youtube.com/watch?v=KYpqPZCzbwA&list=PLLnpHn493BHF-TxB5PqpKfJ_XjTwP5utB
 
 
 How the Footer Works
