@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+@import url(https://fonts.googleapis.com/css?family=Exo:600);
 
 // variables
 // ---------
@@ -140,11 +141,12 @@ span {
   margin-left: 0px;
   background: #fff;
   .card_resource{
+    font-family: 'Exo', sans-serif !important;
+    letter-spacing: 1px;
     display: block;
     border-bottom: 1px dotted #b5b5b5;
     color: $orange;
     margin: 0;
-    font-weight: 300;
     font-size: 1em;
   }
   .card_title{
