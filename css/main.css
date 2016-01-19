@@ -796,6 +796,14 @@ body {
   background-position: top;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+scrollbar {
+  visibility: hidden !important;
+}
+
 a:focus, button:focus {
   outline: 2px dotted #0267a8;
 }

@@ -21,7 +21,17 @@ body {
   background-size:cover;
   background-color: #fff;
   background-position: top;
+}
 
+// Takes out horizontal scrolling ( for smaller screens, this is a must ) while
+// not breaking vertical scrolling functionality
+
+body{
+  overflow-x: hidden;
+}
+
+scrollbar {
+  visibility: hidden !important;
 }
 
 // Focus Accessibility Block | Begin
