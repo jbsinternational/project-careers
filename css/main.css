@@ -938,6 +938,7 @@ span i {
 }
 .card .card_resource {
   margin-bottom: 10px;
+  padding-bottom: 5px;
 }
 .card h3 {
   display: inline-block;
