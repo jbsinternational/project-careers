@@ -905,7 +905,6 @@ span i {
 }
 .card .card_resource {
   font-family: 'Exo', sans-serif !important;
-  letter-spacing: 1px;
   display: block;
   border-bottom: 1px dotted #b5b5b5;
   color: #cc450b;
