@@ -17,6 +17,7 @@
     var group = $(this).data('group');
     var currentFilter = $(this).data('filter');
 
+    // toggle function along with having multiple selectors
     if(selected == "0") {
       filters = $(this).data('filter');
       $(this).data('selected', "1");
