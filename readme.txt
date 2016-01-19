@@ -76,6 +76,9 @@ Note that with Suzy, the outer container is calculated on the fly depending on y
 Notes
 =====
 
+There is a config.rb file to make note of, specifically line 13-- its current state automatically minifies everything for production deployment. Change the value to ":expanded" to un-minify everything.
+
+
 Google Analytics code is in there, just needs your API key to start collecting data. It's commented on the index file where to insert this key, at the very bottom of the file.
 
 Hope this helps!
