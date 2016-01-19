@@ -29,12 +29,9 @@ ISOTOPE FILTER SNIPPET
 
 
   1) You need to keep "filter-resources" in that parent class or Isotope wont know where to fetch the categories for each filter
-  2) Each button group is preceded by its category, so in this instance, "audience button-group filters-button-group" is establishing
-      a button group for the audience category.
-  3) I know it seems redundant, but you NEED to have each filter category be a button, and each button needs a class name of "button"
-      That's just isotope conventions.
-  4) data-selectioned="0" is part of some js I wrote to allow users to disable filters by clicking on it a second time, while also having
-     multiple selections per category. Leave that one alone and make sure it's included in any extra categories you add.
+  2) Each button group is preceded by its category, so in this instance, "audience button-group filters-button-group" is establishing a button group for the audience category.
+  3) I know it seems redundant, but you NEED to have each filter category be a button, and each button needs a class name of "button". That's just isotope conventions.
+  4) data-selectioned="0" is part of some js I wrote to allow users to disable filters by clicking on it a second time, while also having multiple selections per category. Leave that one alone and make sure it's included in any extra categories you add.
   5) data-filter is isotope conventions as well. Gonna need to include that as I've laid it out for you if you intend to add filters.
 
 
@@ -56,9 +53,7 @@ ISOTOPE CARD SNIPPET
   </section>
 
   1) Most of these class names are semantic tags that made it easier for me to code
-  2) Each section parent gets class names relative to the tags they're responsible for. So if a parent has an audience for Students and Employers,
-     while also having a tag of Technology and a resource tag of Apps, then you must include all those tags in the section class names for it to
-     be filtered as such. Really, all the work is done within that section class setting. After that, you just let isotope do it's thing.
+  2) Each section parent gets class names relative to the tags they're responsible for. So if a parent has an audience for Students and Employers, while also having a tag of Technology and a resource tag of Apps, then you must include all those tags in the section class names for it to be filtered as such. Really, all the work is done within that section class setting. After that, you just let isotope do it's thing.
 
 
 
@@ -67,27 +62,21 @@ Grid / Mobile Responsiveness:
 http://susy.oddbird.net/
 http://breakpoint-sass.com/
 
-This was my first time using both of these as light-weight solutions for static sites ( I usually just use the 1% CSS Grid and hand-code media queries )
-and I gotta say, both of these tools are awesome. Definitely look into these if you need to build static sites in the future, especially breakpoint.
+This was my first time using both of these as light-weight solutions for static sites ( I usually just use the 1% CSS Grid and hand-code media queries ) and I gotta say, both of these tools are awesome. Definitely look into these if you need to build static sites in the future, especially breakpoint.
 
 
 How the Footer Works
 ====================
 http://www.lwis.net/journal/2008/02/08/pure-css-sticky-footer/
 
-Note that with Suzy, the outer container is calculated on the fly depending on your viewport. This is pretty damn nice,
-other than when you want to set up a full-width sticky footer. You can use the Susy mixin "bleed", which will add a
-set number of pixels on the bottom as an overflow-y trick, but the end result is pretty flimsy. Cards will fall over the
-footer and content itself is hard to style as it relies on your background color for the footer color and is really
-difficult to directly style. I feel the current footer is sufficient for the site itself and looks good on mobile res's.
+Note that with Suzy, the outer container is calculated on the fly depending on your viewport. This is pretty damn nice, other than when you want to set up a full-width sticky footer. You can use the Susy mixin "bleed", which will add a set number of pixels on the bottom as an overflow-y trick, but the end result is pretty flimsy. Cards will fall over the footer and content itself is hard to style as it relies on your background color for the footer color and is really difficult to directly style. I feel the current footer is sufficient for the site itself and looks good on mobile res's.
 
 
 
 Notes
 =====
 
-Google Analytics code is in there, just needs your API key to start collecting data. It's commented on the index file where
-to insert this key, at the very bottom of the file.
+Google Analytics code is in there, just needs your API key to start collecting data. It's commented on the index file where to insert this key, at the very bottom of the file.
 
 Hope this helps!
 
