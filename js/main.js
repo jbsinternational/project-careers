@@ -21,8 +21,7 @@ $(document).ready(function() {
 
     // toggle function along with having multiple selectors
     if (selected == "0") {
-      filters.push( currentFilter ); // NEW CODE
-      // filters += $(this).data('filter');  // OLD CODE
+      filters.push( currentFilter );
       $(this).data('selected', "1");
       $(this).addClass('is-checked')
     } else {
@@ -32,7 +31,7 @@ $(document).ready(function() {
       var i = filters.indexOf(filtername)
       filters.splice(i, 1)
     }
-    filterstring = filters.join(', '); // NEW CODE
+    filterstring = filters.join(', ');
       // set filter for Isotope
     console.log(filters.join(""));
       $grid.isotope({
