@@ -35,15 +35,14 @@ ISOTOPE FILTER SNIPPET
 ISOTOPE CARD SNIPPET
 ====================
 ```
-  <section class="card element-item students employers apps technology" data-category="students employers student technology">
-    <img src="img/stock-1.png" alt=""/>
+  <section class="card element-item apps accomodations veterans podcasts">
     <div class="card_inner">
       <p class="card_resource">Apps</p>
-      <h1 class="card_title"><a href="#" target="blank"> Commodo Condimentum Aenean Ornare Fermentum </a></h3>
-      <p class="card_excerpt">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-      <p class="card_audience">Audience: Students, Employers</p>
+      <h1 class="card_title"><a href="#" target="blank"> Michael Caine </a></h3>
+      <p class="card_excerpt">Jasper: your baby is the miracle the whole world has been waiting for. You know, your bobby dangler, giggle stick, your general-two-colonels, master of ceremonies... yeah, don't be shy, let's have a look. My lord! you're a tripod!</p>
+      <p class="card_audience">Audience: Veterans, podcasts</p>
       <div class="card_tag">
-        <span class="fa fa-star"></span><p>Technology</p>
+        <span class="fa fa-star"></span><p>Accomodations</p>
       </div>
     </div>
   </section>
