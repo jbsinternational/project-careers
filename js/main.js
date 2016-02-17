@@ -1,48 +1,45 @@
-(function() {
+$(document).ready(function() {
   // init Isotope
   var $grid = $('.grid').isotope({
     itemSelector: '.element-item',
     layoutMode: 'fitRows',
-      fitRows: {
-        gutter: 27
-      }
+    fitRows: {
+      gutter: 27
+    }
   });
 
   // store filter for each group
-  var filters = {};
+  var filters = [];
 
   $('.filters').on('click', '.button', function() {
-    var filters = '';
+
+    var filterstring = '';
     var selected = $(this).data('selected');
-    var group = $(this).data('group');
     var currentFilter = $(this).data('filter');
 
+    console.log("selected: " + selected + ", currentFilter: " + currentFilter);
+
     // toggle function along with having multiple selectors
-    if(selected == "0") {
-      filters = $(this).data('filter');
+    if (selected == "0") {
+      filters.push( currentFilter ); // NEW CODE
+      // filters += $(this).data('filter');  // OLD CODE
       $(this).data('selected', "1");
       $(this).addClass('is-checked')
-    }
-    else {
-      $(this).data('selected', "0");
+    } else {
+      $(this).data('selected', "0")
       $(this).removeClass('is-checked')
+      var filtername = $(this).data('filter')
+      var i = filters.indexOf(filtername)
+      filters.splice(i, 1)
     }
-
-    // set filter for Isotope
-    $grid.isotope({
-      filter: filters
-    });
-
-    // flatten object by concatting values
-    function concatValues(obj) {
-      var value = '';
-      for (var prop in obj) {
-        value += obj[prop];
-      }
-      return value;
-    }
+    filterstring = filters.join(', '); // NEW CODE
+      // set filter for Isotope
+    console.log(filters.join(""));
+      $grid.isotope({
+        filter: filters.join("")
+      });
   });
-}());
+});
 
 
 // Focus Outline Acessibility JS
@@ -59,9 +56,9 @@
       }
     },
     _set_class = function(add) {
-      if (add && ! e.classList.contains('no-focus')) {
+      if (add && !e.classList.contains('no-focus')) {
         e.classList.add('no-focus');
-      } else if (!add)    {
+      } else if (!add) {
         e.classList.remove('no-focus');
       }
     };
