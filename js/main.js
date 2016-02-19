@@ -17,8 +17,6 @@ $(document).ready(function() {
     var selected = $(this).data('selected');
     var currentFilter = $(this).data('filter');
 
-    console.log("selected: " + selected + ", currentFilter: " + currentFilter);
-
     // toggle function along with having multiple selectors
     if (selected == "0") {
       filters.push( currentFilter );
@@ -33,7 +31,6 @@ $(document).ready(function() {
     }
     filterstring = filters.join(', ');
       // set filter for Isotope
-    console.log(filters.join(""));
       $grid.isotope({
         filter: filters.join("")
       });
