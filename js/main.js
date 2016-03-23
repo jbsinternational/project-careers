@@ -8,35 +8,41 @@ $(document).ready(function() {
     }
   });
 
-  // store filter for each group
-  var filters = [];
 
-  $('.filters').on('click', '.button', function() {
+// store filter for each group
+var filters = {};
 
-    var filterstring = '';
-    var selected = $(this).data('selected');
-    var currentFilter = $(this).data('filter');
+$('.filters').on( 'click', '.button', function() {
+  var $this = $(this);
+  // get group key
+  var $buttonGroup = $this.parents('.button-group');
+  var filterGroup = $buttonGroup.attr('.filters-button-group');
+  // set filter for group
+  filters[ filterGroup ] = $this.attr('data-filter');
+  // combine filters
+  var filterValue = concatValues( filters );
+  // set filter for Isotope
+  $grid.isotope({ filter: filterValue });
+});
 
-    // toggle function along with having multiple selectors
-    if (selected == "0") {
-      filters.push( currentFilter );
-      $(this).data('selected', "1");
-      $(this).addClass('is-checked')
-    } else {
-      $(this).data('selected', "0")
-      $(this).removeClass('is-checked')
-      var filtername = $(this).data('filter')
-      var i = filters.indexOf(filtername)
-      filters.splice(i, 1)
-    }
-    filterstring = filters.join(', ');
-      // set filter for Isotope
-      $grid.isotope({
-        filter: filters.join("")
-      });
+// change is-checked class on buttons
+$('.button-group').each( function( i, buttonGroup ) {
+  var $buttonGroup = $( buttonGroup );
+  $buttonGroup.on( 'click', 'button', function() {
+    $buttonGroup.find('.is-checked').removeClass('is-checked');
+    $( this ).addClass('is-checked');
   });
 });
 
+// flatten object by concatting values
+function concatValues( obj ) {
+  var value = '';
+  for ( var prop in obj ) {
+    value += obj[ prop ];
+  }
+  return value;
+}
+});
 
 // Focus Outline Acessibility JS
 // -----------------------------
@@ -67,3 +73,39 @@ $(document).ready(function() {
     _set_class(false);
   });
 })(document);
+
+// Old filter sorting code-- activate this in lieu of lines 13 through 45 in
+// order to switch the filtering from having one option per category to
+// having multiple options per category
+
+// store filter for each group
+//  var filters = [];
+
+// $('.filters').on('click', '.button', function() {
+//
+//     var filterstring = '';
+//     var selected = $(this).data('selected');
+//     var currentFilter = $(this).data('filter');
+//
+//     console.log("selected: " + selected + ", currentFilter: " + currentFilter);
+//
+//     // toggle function along with having multiple selectors
+//     if (selected == "0") {
+//       filters.push( currentFilter );
+//       $(this).data('selected', "1");
+//       $(this).addClass('is-checked')
+//     } else {
+//       $(this).data('selected', "0")
+//       $(this).removeClass('is-checked')
+//       var filtername = $(this).data('filter')
+//       var i = filters.indexOf(filtername)
+//       filters.splice(i, 1)
+//     }
+//     filterstring = filters.join(', ');
+//       // set filter for Isotope
+//     consol`e.log(filters.join(""));
+//       $grid.isotope({
+//         filter: filters.join("")
+//       });
+//   });
+// });
