@@ -1,28 +1,85 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+@import url(https://fonts.googleapis.com/css?family=Exo:600);
+
+// variables
+// ---------
+$orange: #cc450b;
+$blue: #0267a8;
+
+
+// http://www.lwis.net/journal/2008/02/08/pure-css-sticky-footer/
+// --------------------------------------------------------------
+html, body, .wrapper { height: 100%; }
+body > .wrapper { height: auto; min-height: 100%; }
 
 html{
-  background-image: url("/Users/pmiller/Documents/Code/JBS/project-careers/img/background.png");
-  // background-repeat:no-repeat; // re-enable once background image issue is figured out
-  background-size:contain;
-  background-position:center cover;
-}
-
-header, aside {
-  margin-top: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: lighter;
+  background-image: url("../img/background.jpg");
+  background-size:cover;
+  background-color: #fff;
+  background-position: top;
+}
+
+// Takes out horizontal scrolling ( for smaller screens, this is a must ) while
+// not breaking vertical scrolling functionality
+
+body{
+  overflow-x: hidden;
+}
+
+scrollbar {
+  visibility: hidden !important;
+}
+
+// Focus Accessibility Block | Begin
+// ---------------------------------
+a, button {
+   &:focus {
+     outline: 2px dotted $blue;
+   }
+ }
+
+ .no-focus {
+   a, button {
+      outline: none;
+   }
+ }
+
+.font-smoothing {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+// Focus Accessibility Block | End
+// -------------------------------
+
+span {
+  display: block;
+  i {
+    text-decoration: underline;
+  }
+}
+
+
+.logo_container {
+  .logo span{
+    display: none;
+  }
+  h1{
+  margin: 0;
+  }
 }
 
 .audience,
 .type,
 .star {
-  ul li {
+  ul button {
     background: #fff;
     color: #707070;
-    margin-left: -5px;
+    margin-left: -6px;
     border-left: 1px solid #dcdcdc;
     cursor: pointer;
     border-top: 1px solid #dcdcdc;
@@ -37,13 +94,16 @@ body {
       border-bottom-right-radius: 5px;
       border-right: 1px solid #dcdcdc;
     }
+    &:active{
+      outline: none;
+    }
   }
 }
 
 
-.resources {
+.resources_container {
   background: #fff;
-  h2 {
+  h1 {
     margin: 0;
     font-size: 1.2em;
   }
@@ -54,21 +114,25 @@ body {
   }
 }
 
-.active {
-  background: #0267a8 !important;
+.is-checked {
+  background: $blue !important;
   color: #fff !important;
 }
 
 .welcome {
-  background: #db581f;
+  background: $orange;
   color: #fff;
-  padding: 2% 9% 10%;
-  line-height: 1.75em;
   font-weight: lighter;
+  line-height: 1.75em;
+  padding: 2% 5% 10%;
   h1{
     font-size: 1.5em;
     font-weight: lighter;
     letter-spacing: .5px;
+  }
+  a {
+    color: #fff;
+    line-height: 0;
   }
 }
 
@@ -77,15 +141,27 @@ body {
   margin-left: 0px;
   background: #fff;
   .card_resource{
-    color: #db581f;
+    font-family: 'Exo', sans-serif !important;
+    display: block;
+    border-bottom: 1px dotted #b5b5b5;
+    color: $orange;
     margin: 0;
-    font-weight: 300;
     font-size: 1em;
   }
   .card_title{
-    color: #0267a8;
+    color: $blue;
     font-size: 1em;
     margin: 0;
+    a{
+      text-decoration: none;
+      color: inherit;
+      &:hover {
+        text-decoration: underline;
+      }
+      &:active {
+        text-decoration: underline;
+      }
+    }
   }
   .card_exceprt {
     font-size: .8em;
@@ -94,11 +170,45 @@ body {
     font-weight: 800;
     font-size: .8em;
   }
+  .card_tag{
+    display: block;
+    border-top: 1px dotted #b5b5b5;
+  }
+  .card_resource{
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+  }
   h3{
     display: inline-block;
+    margin-left: 5px;
   }
-  .fa, div.card_tag h3 {
+  .fa, div.card_tag p {
     color: #35792a;
     font-size: .95em;
+    display: inline-block;
+    margin-left: 5px;
+  }
+}
+
+.grid{
+  margin-bottom: 30px;
+}
+
+.about_header {
+  width: 100%;
+}
+
+footer {
+  background: rgba(255,255,255,.6);
+  color: #000;
+  font-weight: bolder;
+  clear: both;
+  position: relative;
+  z-index: 10;
+  height: 1em;
+  margin-top: -1em;
+  p {
+    text-align: center;
+    margin: 0;
   }
 }
