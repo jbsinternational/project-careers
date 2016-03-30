@@ -8,15 +8,18 @@
       }
   });
 
-  // store filter for each group
-  var filters = {};
+
+  var buttonsClasses = [
+    '.audience.filters-button-group',
+    '.type.filters-button-group',
+    '.star.filters-button-group'
+  ];
 
   $('.filters').on('click', '.button', function() {
 
-    var selected = $(this).data('selected');
 
     // toggle function along with having multiple selectors
-    if(selected == "0") {
+    if(!$(this).data('selected')) {
       $(this).data('selected', true);
       $(this).addClass('is-checked')
     }
@@ -25,19 +28,56 @@
       $(this).removeClass('is-checked')
     }
 
-    var filters = '';
-    $(".filters-button-group").find("button").each(function(i, obj) {
-      if ($(obj).data('selected')) {
-        filters = filters + $(obj).data('filter');
-      }
+
+    var selectedButtons = [];
+    $.each(buttonsClasses, function(i, buttonClass) {
+      selectedButtons[i] = ['*'];
+      $(buttonClass).find("button").each(function(j, obj) {
+        if ($(obj).data('selected')) {
+          selectedButtons[i].push($(obj).data('filter'));
+        }
+      });
     });
+
+    var filters = [];
+
+    var i = 1;
+    do {
+      var j = 1;
+      do {
+        var k = 1;
+        do {
+          var f = '';
+          if (typeof selectedButtons[0][i]  !== "undefined") {
+            f = f + selectedButtons[0][i];
+          }
+          if (typeof selectedButtons[1][j]  !== "undefined") {
+            f = f + selectedButtons[1][j];
+          }
+          if (typeof selectedButtons[2][k]  !== "undefined") {
+            f = f + selectedButtons[2][k];
+          }
+          filters.push(f);
+          k++;
+        }
+        while (k<selectedButtons[2].length);
+        j++;
+      }
+      while (j<selectedButtons[1].length);
+      i++;
+    }
+    while (i<selectedButtons[0].length);
+
 
     // set filter for Isotope
     $grid.isotope({
-      filter: filters
+      filter: filters.join(', ')
     });
 
   });
+
+
+
 }());
 
 
