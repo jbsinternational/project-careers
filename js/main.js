@@ -1,48 +1,45 @@
-$(document).ready(function() {
+(function() {
   // init Isotope
   var $grid = $('.grid').isotope({
     itemSelector: '.element-item',
     layoutMode: 'fitRows',
-    fitRows: {
-      gutter: 27
+      fitRows: {
+        gutter: 27
+      }
+  });
+
+  // store filter for each group
+  var filters = {};
+
+  $('.filters').on('click', '.button', function() {
+
+    var selected = $(this).data('selected');
+
+    // toggle function along with having multiple selectors
+    if(selected == "0") {
+      $(this).data('selected', true);
+      $(this).addClass('is-checked')
     }
+    else {
+      $(this).data('selected', false);
+      $(this).removeClass('is-checked')
+    }
+
+    var filters = '';
+    $(".filters-button-group").find("button").each(function(i, obj) {
+      if ($(obj).data('selected')) {
+        filters = filters + $(obj).data('filter');
+      }
+    });
+
+    // set filter for Isotope
+    $grid.isotope({
+      filter: filters
+    });
+
   });
+}());
 
-
-// store filter for each group
-var filters = {};
-
-$('.filters').on( 'click', '.button', function() {
-  var $this = $(this);
-  // get group key
-  var $buttonGroup = $this.parents('.button-group');
-  var filterGroup = $buttonGroup.attr('.filters-button-group');
-  // set filter for group
-  filters[ filterGroup ] = $this.attr('data-filter');
-  // combine filters
-  var filterValue = concatValues( filters );
-  // set filter for Isotope
-  $grid.isotope({ filter: filterValue });
-});
-
-// change is-checked class on buttons
-$('.button-group').each( function( i, buttonGroup ) {
-  var $buttonGroup = $( buttonGroup );
-  $buttonGroup.on( 'click', 'button', function() {
-    $buttonGroup.find('.is-checked').removeClass('is-checked');
-    $( this ).addClass('is-checked');
-  });
-});
-
-// flatten object by concatting values
-function concatValues( obj ) {
-  var value = '';
-  for ( var prop in obj ) {
-    value += obj[ prop ];
-  }
-  return value;
-}
-});
 
 // Focus Outline Acessibility JS
 // -----------------------------
@@ -58,9 +55,9 @@ function concatValues( obj ) {
       }
     },
     _set_class = function(add) {
-      if (add && !e.classList.contains('no-focus')) {
+      if (add && ! e.classList.contains('no-focus')) {
         e.classList.add('no-focus');
-      } else if (!add) {
+      } else if (!add)    {
         e.classList.remove('no-focus');
       }
     };
@@ -73,39 +70,3 @@ function concatValues( obj ) {
     _set_class(false);
   });
 })(document);
-
-// Old filter sorting code-- activate this in lieu of lines 13 through 45 in
-// order to switch the filtering from having one option per category to
-// having multiple options per category
-
-// store filter for each group
-//  var filters = [];
-
-// $('.filters').on('click', '.button', function() {
-//
-//     var filterstring = '';
-//     var selected = $(this).data('selected');
-//     var currentFilter = $(this).data('filter');
-//
-//     console.log("selected: " + selected + ", currentFilter: " + currentFilter);
-//
-//     // toggle function along with having multiple selectors
-//     if (selected == "0") {
-//       filters.push( currentFilter );
-//       $(this).data('selected', "1");
-//       $(this).addClass('is-checked')
-//     } else {
-//       $(this).data('selected', "0")
-//       $(this).removeClass('is-checked')
-//       var filtername = $(this).data('filter')
-//       var i = filters.indexOf(filtername)
-//       filters.splice(i, 1)
-//     }
-//     filterstring = filters.join(', ');
-//       // set filter for Isotope
-//     consol`e.log(filters.join(""));
-//       $grid.isotope({
-//         filter: filters.join("")
-//       });
-//   });
-// });
